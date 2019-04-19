@@ -4,7 +4,7 @@
 
 ListNode* ListNode::BuildList(const std::vector<int>& nums) 
 {
-  ListNode* head = new ListNode;
+  ListNode* head = new ListNode();
   ListNode* node = head;
   for (int i = 0; i < nums.size(); ++i) {
     if (node->val == 0) node->val = nums[i];
@@ -37,7 +37,7 @@ ListNode* ListNode::DeleteNode(ListNode** node)
   return nullptr;
 }
 
-void ListNode::PrintList(ListNode* list)
+void ListNode::PrintList(ListNode *list)
 {
   while(list != nullptr) {
     printf("%d->", list->val);

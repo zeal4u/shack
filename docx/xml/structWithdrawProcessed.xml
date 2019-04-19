@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structWithdrawProcessed" kind="struct" prot="public">
+    <compoundname>WithdrawProcessed</compoundname>
+    <includes refid="withdraw_8h" local="no">withdraw.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structWithdrawProcessed_1afa3ac4805902cdbc81215c07d004fe38" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string WithdrawProcessed::account_</definition>
+        <argsstring></argsstring>
+        <name>account_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="38" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structWithdrawProcessed_1ad80c4901e941fb58a74c1b116abcf467" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned WithdrawProcessed::amount_</definition>
+        <argsstring></argsstring>
+        <name>amount_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="39" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structWithdrawProcessed_1aeb8e5c4e04a0c3abf6071bac464115b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WithdrawProcessed::WithdrawProcessed</definition>
+        <argsstring>(const std::string account, unsigned amount)</argsstring>
+        <name>WithdrawProcessed</name>
+        <param>
+          <type>const std::string</type>
+          <declname>account</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="41" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/root/Public/shack/atm/withdraw.h" line="37" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="37" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structWithdrawProcessed_1afa3ac4805902cdbc81215c07d004fe38" prot="public" virt="non-virtual"><scope>WithdrawProcessed</scope><name>account_</name></member>
+      <member refid="structWithdrawProcessed_1ad80c4901e941fb58a74c1b116abcf467" prot="public" virt="non-virtual"><scope>WithdrawProcessed</scope><name>amount_</name></member>
+      <member refid="structWithdrawProcessed_1aeb8e5c4e04a0c3abf6071bac464115b8" prot="public" virt="non-virtual"><scope>WithdrawProcessed</scope><name>WithdrawProcessed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="template__dispatcher_8cpp" kind="file">
+    <compoundname>template_dispatcher.cpp</compoundname>
+    <includes refid="template__dispatcher_8h" local="yes">template_dispatcher.h</includes>
+    <incdepgraph>
+      <node id="386">
+        <label>queue</label>
+      </node>
+      <node id="383">
+        <label>queue.h</label>
+        <link refid="queue_8h"/>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>/root/Public/shack/atm/template_dispatcher.cpp</label>
+        <link refid="template_dispatcher.cpp"/>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>template_dispatcher.h</label>
+        <link refid="template__dispatcher_8h"/>
+        <childnode refid="383" relation="include">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>condition_variable</label>
+      </node>
+      <node id="384">
+        <label>mutex</label>
+      </node>
+      <node id="387">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>zeal4u<sp/>on<sp/>2019/3/28.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="template__dispatcher_8h" kindref="compound">template_dispatcher.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/root/Public/shack/atm/template_dispatcher.cpp"/>
+  </compounddef>
+</doxygen>

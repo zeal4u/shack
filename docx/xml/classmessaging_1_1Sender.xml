@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classmessaging_1_1Sender" kind="class" prot="public">
+    <compoundname>messaging::Sender</compoundname>
+    <includes refid="sender_8h" local="no">sender.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmessaging_1_1Sender_1a56aa7e425615eae331039cd66346b56c" prot="private" static="no" mutable="no">
+        <type><ref refid="classmessaging_1_1Queue" kindref="compound">Queue</ref> *</type>
+        <definition>Queue* messaging::Sender::queue_ptr_</definition>
+        <argsstring></argsstring>
+        <name>queue_ptr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/sender.h" line="26" column="1" bodyfile="/root/Public/shack/atm/sender.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmessaging_1_1Sender_1a40d7ba2c5bd94d249b47b518466870dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>messaging::Sender::Sender</definition>
+        <argsstring>()</argsstring>
+        <name>Sender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/sender.h" line="16" column="1" bodyfile="/root/Public/shack/atm/sender.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmessaging_1_1Sender_1a55b2718ff332f741494d3d90c7b83de2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>messaging::Sender::Sender</definition>
+        <argsstring>(Queue *queue_ptr)</argsstring>
+        <name>Sender</name>
+        <param>
+          <type><ref refid="classmessaging_1_1Queue" kindref="compound">Queue</ref> *</type>
+          <declname>queue_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/sender.h" line="17" column="1" bodyfile="/root/Public/shack/atm/sender.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Message</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void messaging::Sender::Send</definition>
+        <argsstring>(const Message &amp;msg)</argsstring>
+        <name>Send</name>
+        <param>
+          <type>const Message &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/sender.h" line="20" column="1" bodyfile="/root/Public/shack/atm/sender.h" bodystart="20" bodyend="24"/>
+        <references refid="classmessaging_1_1Sender_1a56aa7e425615eae331039cd66346b56c" compoundref="sender_8h" startline="26">queue_ptr_</references>
+        <references refid="classmessaging_1_1Queue_1a8ee0ac353ead8aca910d8073a2d5e16e" compoundref="queue_8h" startline="30" endline="34">messaging::Queue::Push</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="159">
+        <label>messaging::Sender</label>
+        <link refid="classmessaging_1_1Sender"/>
+        <childnode refid="160" relation="usage">
+          <edgelabel>queue_ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="160">
+        <label>messaging::Queue</label>
+        <link refid="classmessaging_1_1Queue"/>
+      </node>
+    </collaborationgraph>
+    <location file="/root/Public/shack/atm/sender.h" line="14" column="1" bodyfile="/root/Public/shack/atm/sender.h" bodystart="14" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classmessaging_1_1Sender_1a56aa7e425615eae331039cd66346b56c" prot="private" virt="non-virtual"><scope>messaging::Sender</scope><name>queue_ptr_</name></member>
+      <member refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" prot="public" virt="non-virtual"><scope>messaging::Sender</scope><name>Send</name></member>
+      <member refid="classmessaging_1_1Sender_1a40d7ba2c5bd94d249b47b518466870dc" prot="public" virt="non-virtual"><scope>messaging::Sender</scope><name>Sender</name></member>
+      <member refid="classmessaging_1_1Sender_1a55b2718ff332f741494d3d90c7b83de2" prot="public" virt="non-virtual"><scope>messaging::Sender</scope><name>Sender</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

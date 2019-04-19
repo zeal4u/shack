@@ -15,30 +15,38 @@ private:
 
 public:
   explicit AtomicMarkablePointer(Pointer p, bool mark) {
+    if ((int64_t) p & 1)
+      printf("Woops we got a odd pointer!\n");
     ptr.store((Pointer)((int64_t)p | (int64_t)mark));
   }
+
   AtomicMarkablePointer(const AtomicMarkablePointer &a) {
     ptr.store(a.ptr.load());
   }
-  AtomicMarkablePointer operator=(const AtomicMarkablePointer &a) {
+
+  AtomicMarkablePointer& operator=(const AtomicMarkablePointer &a) {
     if (*this != a) {
       ptr.store(a.ptr.load());
     }
     return *this;
   }
+
   Pointer getReference() const {
     Pointer p = ptr.load();
     return (bool)((int64_t)p & Marked) ? (Pointer)((int64_t)(p) & ~Marked) : p;
   }
+
   bool isMarked() const {
     Pointer p = ptr.load();
     return (bool)((int64_t)p & Marked);
   }
+
   Pointer get(bool &b) const {
     Pointer p = ptr.load();
-    b = (bool)((int64_t)p & Marked);
+    b = ((int64_t)p & Marked) == Marked;
     return b ? (Pointer)((int64_t)(p) & ~Marked) : p;
   }
+
   bool compareAndSet(Pointer expectedPointer, Pointer newPointer,
                      bool expectedMark, bool newMark) {
     Pointer p = ptr.load();
@@ -50,10 +58,12 @@ public:
     }
     return false;
   }
+
   void set(Pointer newPointer, bool newMark) {
     newPointer = (Pointer)((int64_t)newPointer | (int64_t)newMark);
     ptr.exchange(newPointer);
   }
+
   bool attemptMark(Pointer expectedPointer, bool newMark) {
     Pointer newPointer = (Pointer)((int64_t)expectedPointer | (int64_t)newMark);
     expectedPointer = isMarked() ? (Pointer)((int64_t)expectedPointer | Marked)

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structWithdrawPressed" kind="struct" prot="public">
+    <compoundname>WithdrawPressed</compoundname>
+    <includes refid="withdraw_8h" local="no">withdraw.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structWithdrawPressed_1ab812bf1504edd7e606dc5fa6b52f6f46" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned WithdrawPressed::amount_</definition>
+        <argsstring></argsstring>
+        <name>amount_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="60" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structWithdrawPressed_1a10f3534e069eca23e8ddffe58c34faf6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WithdrawPressed::WithdrawPressed</definition>
+        <argsstring>(unsigned amount)</argsstring>
+        <name>WithdrawPressed</name>
+        <param>
+          <type>unsigned</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="61" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/root/Public/shack/atm/withdraw.h" line="59" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="59" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structWithdrawPressed_1ab812bf1504edd7e606dc5fa6b52f6f46" prot="public" virt="non-virtual"><scope>WithdrawPressed</scope><name>amount_</name></member>
+      <member refid="structWithdrawPressed_1a10f3534e069eca23e8ddffe58c34faf6" prot="public" virt="non-virtual"><scope>WithdrawPressed</scope><name>WithdrawPressed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

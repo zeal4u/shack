@@ -1,0 +1,58 @@
+\hypertarget{classmessaging_1_1Queue}{\section{messaging\-:\-:Queue Class Reference}
+\label{classmessaging_1_1Queue}\index{messaging\-::\-Queue@{messaging\-::\-Queue}}
+}
+
+
+{\ttfamily \#include $<$queue.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{classmessaging_1_1Queue_a8ee0ac353ead8aca910d8073a2d5e16e}{Push} (const T \&msg)
+\item 
+std\-::shared\-\_\-ptr$<$ \hyperlink{structmessaging_1_1MessageBase}{Message\-Base} $>$ \hyperlink{classmessaging_1_1Queue_a624adbac8b7f4b5ebf6bb0f9ab76bcc3}{Wait\-And\-Pop} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::mutex \hyperlink{classmessaging_1_1Queue_acb84af14fea49c09597be7ad19f9f3c5}{mutex\-\_\-}
+\item 
+std\-::condition\-\_\-variable \hyperlink{classmessaging_1_1Queue_aec7510ebff3d15176afdf3d93ca6fdc8}{cond\-\_\-var\-\_\-}
+\item 
+std\-::queue$<$ std\-::shared\-\_\-ptr\\*
+$<$ \hyperlink{structmessaging_1_1MessageBase}{Message\-Base} $>$ $>$ \hyperlink{classmessaging_1_1Queue_aae9c5f0bc7b5be870129c56643404551}{queue\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmessaging_1_1Queue_a8ee0ac353ead8aca910d8073a2d5e16e}{\index{messaging\-::\-Queue@{messaging\-::\-Queue}!Push@{Push}}
+\index{Push@{Push}!messaging::Queue@{messaging\-::\-Queue}}
+\subsubsection[{Push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void messaging\-::\-Queue\-::\-Push (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmessaging_1_1Queue_a8ee0ac353ead8aca910d8073a2d5e16e}
+\hypertarget{classmessaging_1_1Queue_a624adbac8b7f4b5ebf6bb0f9ab76bcc3}{\index{messaging\-::\-Queue@{messaging\-::\-Queue}!Wait\-And\-Pop@{Wait\-And\-Pop}}
+\index{Wait\-And\-Pop@{Wait\-And\-Pop}!messaging::Queue@{messaging\-::\-Queue}}
+\subsubsection[{Wait\-And\-Pop}]{\setlength{\rightskip}{0pt plus 5cm}std\-::shared\-\_\-ptr$<${\bf Message\-Base}$>$ messaging\-::\-Queue\-::\-Wait\-And\-Pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmessaging_1_1Queue_a624adbac8b7f4b5ebf6bb0f9ab76bcc3}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmessaging_1_1Queue_aec7510ebff3d15176afdf3d93ca6fdc8}{\index{messaging\-::\-Queue@{messaging\-::\-Queue}!cond\-\_\-var\-\_\-@{cond\-\_\-var\-\_\-}}
+\index{cond\-\_\-var\-\_\-@{cond\-\_\-var\-\_\-}!messaging::Queue@{messaging\-::\-Queue}}
+\subsubsection[{cond\-\_\-var\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::condition\-\_\-variable messaging\-::\-Queue\-::cond\-\_\-var\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classmessaging_1_1Queue_aec7510ebff3d15176afdf3d93ca6fdc8}
+\hypertarget{classmessaging_1_1Queue_acb84af14fea49c09597be7ad19f9f3c5}{\index{messaging\-::\-Queue@{messaging\-::\-Queue}!mutex\-\_\-@{mutex\-\_\-}}
+\index{mutex\-\_\-@{mutex\-\_\-}!messaging::Queue@{messaging\-::\-Queue}}
+\subsubsection[{mutex\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::mutex messaging\-::\-Queue\-::mutex\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classmessaging_1_1Queue_acb84af14fea49c09597be7ad19f9f3c5}
+\hypertarget{classmessaging_1_1Queue_aae9c5f0bc7b5be870129c56643404551}{\index{messaging\-::\-Queue@{messaging\-::\-Queue}!queue\-\_\-@{queue\-\_\-}}
+\index{queue\-\_\-@{queue\-\_\-}!messaging::Queue@{messaging\-::\-Queue}}
+\subsubsection[{queue\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::queue$<$std\-::shared\-\_\-ptr$<${\bf Message\-Base}$>$ $>$ messaging\-::\-Queue\-::queue\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classmessaging_1_1Queue_aae9c5f0bc7b5be870129c56643404551}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/root/\-Public/shack/atm/\hyperlink{queue_8h}{queue.\-h}\end{DoxyCompactItemize}

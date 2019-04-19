@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structIssueMoney" kind="struct" prot="public">
+    <compoundname>IssueMoney</compoundname>
+    <includes refid="withdraw_8h" local="no">withdraw.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIssueMoney_1a79a87d91b556fa635ad61ad654635c76" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned IssueMoney::amount_</definition>
+        <argsstring></argsstring>
+        <name>amount_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="67" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIssueMoney_1a955c7f727bcedad1929ab4e4240f3e0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IssueMoney::IssueMoney</definition>
+        <argsstring>(unsigned amount)</argsstring>
+        <name>IssueMoney</name>
+        <param>
+          <type>unsigned</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="68" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/root/Public/shack/atm/withdraw.h" line="66" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="66" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structIssueMoney_1a79a87d91b556fa635ad61ad654635c76" prot="public" virt="non-virtual"><scope>IssueMoney</scope><name>amount_</name></member>
+      <member refid="structIssueMoney_1a955c7f727bcedad1929ab4e4240f3e0d" prot="public" virt="non-virtual"><scope>IssueMoney</scope><name>IssueMoney</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

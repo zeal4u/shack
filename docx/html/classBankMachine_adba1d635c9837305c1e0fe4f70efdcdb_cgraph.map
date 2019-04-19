@@ -1,0 +1,6 @@
+<map id="BankMachine::Run" name="BankMachine::Run">
+<area shape="rect" id="node2" href="$classmessaging_1_1Receiver.html#a3f0e7b541159793eaec1e0fa6802d4d2" title="messaging::Receiver\l::Wait" alt="" coords="201,5,346,46"/>
+<area shape="rect" id="node3" href="$classmessaging_1_1Dispatcher.html#a6d9d0bf1da266ca951c7821bc4e84f9f" title="messaging::Dispatcher\l::Handle" alt="" coords="195,70,351,111"/>
+<area shape="rect" id="node4" href="$classmessaging_1_1Sender.html#a5f8d8f2fa560996d8f224cc0f10d8f8c" title="messaging::Sender::Send" alt="" coords="187,136,359,163"/>
+<area shape="rect" id="node5" href="$classmessaging_1_1Queue.html#a8ee0ac353ead8aca910d8073a2d5e16e" title="messaging::Queue::Push" alt="" coords="409,136,578,163"/>
+</map>

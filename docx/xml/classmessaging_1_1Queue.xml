@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classmessaging_1_1Queue" kind="class" prot="public">
+    <compoundname>messaging::Queue</compoundname>
+    <includes refid="queue_8h" local="no">queue.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmessaging_1_1Queue_1acb84af14fea49c09597be7ad19f9f3c5" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex messaging::Queue::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/queue.h" line="45" column="1" bodyfile="/root/Public/shack/atm/queue.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmessaging_1_1Queue_1aec7510ebff3d15176afdf3d93ca6fdc8" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable messaging::Queue::cond_var_</definition>
+        <argsstring></argsstring>
+        <name>cond_var_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/queue.h" line="46" column="1" bodyfile="/root/Public/shack/atm/queue.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; std::shared_ptr&lt; <ref refid="structmessaging_1_1MessageBase" kindref="compound">MessageBase</ref> &gt; &gt;</type>
+        <definition>std::queue&lt;std::shared_ptr&lt;MessageBase&gt; &gt; messaging::Queue::queue_</definition>
+        <argsstring></argsstring>
+        <name>queue_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/queue.h" line="47" column="1" bodyfile="/root/Public/shack/atm/queue.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmessaging_1_1Queue_1a8ee0ac353ead8aca910d8073a2d5e16e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void messaging::Queue::Push</definition>
+        <argsstring>(const T &amp;msg)</argsstring>
+        <name>Push</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/queue.h" line="30" column="1" bodyfile="/root/Public/shack/atm/queue.h" bodystart="30" bodyend="34"/>
+        <references refid="classmessaging_1_1Queue_1acb84af14fea49c09597be7ad19f9f3c5" compoundref="queue_8h" startline="45">mutex_</references>
+        <references refid="classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551" compoundref="queue_8h" startline="47">queue_</references>
+        <references refid="classmessaging_1_1Queue_1aec7510ebff3d15176afdf3d93ca6fdc8" compoundref="queue_8h" startline="46">cond_var_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmessaging_1_1Queue_1a624adbac8b7f4b5ebf6bb0f9ab76bcc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="structmessaging_1_1MessageBase" kindref="compound">MessageBase</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MessageBase&gt; messaging::Queue::WaitAndPop</definition>
+        <argsstring>()</argsstring>
+        <name>WaitAndPop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/queue.h" line="36" column="1" bodyfile="/root/Public/shack/atm/queue.h" bodystart="36" bodyend="42"/>
+        <references refid="classmessaging_1_1Queue_1acb84af14fea49c09597be7ad19f9f3c5" compoundref="queue_8h" startline="45">mutex_</references>
+        <references refid="classmessaging_1_1Queue_1aec7510ebff3d15176afdf3d93ca6fdc8" compoundref="queue_8h" startline="46">cond_var_</references>
+        <references refid="classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551" compoundref="queue_8h" startline="47">queue_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/root/Public/shack/atm/queue.h" line="27" column="1" bodyfile="/root/Public/shack/atm/queue.h" bodystart="27" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classmessaging_1_1Queue_1aec7510ebff3d15176afdf3d93ca6fdc8" prot="private" virt="non-virtual"><scope>messaging::Queue</scope><name>cond_var_</name></member>
+      <member refid="classmessaging_1_1Queue_1acb84af14fea49c09597be7ad19f9f3c5" prot="private" virt="non-virtual"><scope>messaging::Queue</scope><name>mutex_</name></member>
+      <member refid="classmessaging_1_1Queue_1a8ee0ac353ead8aca910d8073a2d5e16e" prot="public" virt="non-virtual"><scope>messaging::Queue</scope><name>Push</name></member>
+      <member refid="classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551" prot="private" virt="non-virtual"><scope>messaging::Queue</scope><name>queue_</name></member>
+      <member refid="classmessaging_1_1Queue_1a624adbac8b7f4b5ebf6bb0f9ab76bcc3" prot="public" virt="non-virtual"><scope>messaging::Queue</scope><name>WaitAndPop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

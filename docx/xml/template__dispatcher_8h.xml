@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="template__dispatcher_8h" kind="file">
+    <compoundname>template_dispatcher.h</compoundname>
+    <includes refid="queue_8h" local="yes">queue.h</includes>
+    <includedby refid="dispatcher_8h" local="yes">/root/Public/shack/atm/dispatcher.h</includedby>
+    <includedby refid="template__dispatcher_8cpp" local="yes">/root/Public/shack/atm/template_dispatcher.cpp</includedby>
+    <incdepgraph>
+      <node id="393">
+        <label>queue</label>
+      </node>
+      <node id="390">
+        <label>queue.h</label>
+        <link refid="queue_8h"/>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+      </node>
+      <node id="389">
+        <label>/root/Public/shack/atm/template_dispatcher.h</label>
+        <link refid="template_dispatcher.h"/>
+        <childnode refid="390" relation="include">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>condition_variable</label>
+      </node>
+      <node id="391">
+        <label>mutex</label>
+      </node>
+      <node id="394">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="401">
+        <label>/root/Public/shack/atm/interface_machine.h</label>
+        <link refid="interface__machine_8h"/>
+        <childnode refid="399" relation="include">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>/root/Public/shack/atm/template_dispatcher.cpp</label>
+        <link refid="template__dispatcher_8cpp"/>
+      </node>
+      <node id="397">
+        <label>/root/Public/shack/atm/receiver.h</label>
+        <link refid="receiver_8h"/>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>/root/Public/shack/atm/template_dispatcher.h</label>
+        <link refid="template_dispatcher.h"/>
+        <childnode refid="396" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>/root/Public/shack/atm/dispatcher.h</label>
+        <link refid="dispatcher_8h"/>
+        <childnode refid="397" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>/root/Public/shack/atm/dispatcher.cpp</label>
+        <link refid="dispatcher_8cpp"/>
+      </node>
+      <node id="399">
+        <label>/root/Public/shack/atm/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="400">
+        <label>/root/Public/shack/atm/bank_machine.h</label>
+        <link refid="bank__machine_8h"/>
+        <childnode refid="399" relation="include">
+        </childnode>
+      </node>
+      <node id="402">
+        <label>/root/Public/shack/atm/receiver.cpp</label>
+        <link refid="receiver_8cpp"/>
+      </node>
+      <node id="398">
+        <label>/root/Public/shack/atm/atm.h</label>
+        <link refid="atm_8h"/>
+        <childnode refid="399" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmessaging_1_1TemplateDispatcher" prot="public">messaging::TemplateDispatcher</innerclass>
+    <innernamespace refid="namespacemessaging">messaging</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>zeal4u<sp/>on<sp/>2019/3/28.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/>:<sp/>zeal4u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Email<sp/>:<sp/>jsz1995@live.com</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SHACK_TEMPLATE_DISPATCHER_H</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SHACK_TEMPLATE_DISPATCHER_H</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="queue_8h" kindref="compound">queue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">messaging<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>PreviousDispatcher,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Msg,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="14" refid="classmessaging_1_1TemplateDispatcher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmessaging_1_1TemplateDispatcher" kindref="compound">TemplateDispatcher</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="classmessaging_1_1TemplateDispatcher_1ada53b5ba67f04fa2a8420cded172fdd1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1ada53b5ba67f04fa2a8420cded172fdd1" kindref="member">TemplateDispatcher</ref>(<ref refid="classmessaging_1_1TemplateDispatcher" kindref="compound">TemplateDispatcher</ref><sp/>&amp;&amp;other)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a1c84a8173b54823d7b95db4d4865e134" kindref="member">queue_ptr_</ref>(other.<ref refid="classmessaging_1_1TemplateDispatcher_1a1c84a8173b54823d7b95db4d4865e134" kindref="member">queue_ptr_</ref>),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1aae5b9ea3d2b58005b6ddec368db2bcb0" kindref="member">func_</ref>(other.<ref refid="classmessaging_1_1TemplateDispatcher_1aae5b9ea3d2b58005b6ddec368db2bcb0" kindref="member">func_</ref>),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a51f4255d452392ab1ca7d193d3209d4a" kindref="member">chained_</ref>(other.<ref refid="classmessaging_1_1TemplateDispatcher_1a51f4255d452392ab1ca7d193d3209d4a" kindref="member">chained_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>other.chained_<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classmessaging_1_1TemplateDispatcher_1a00aff7fdf1654ddfc2389d719b949427" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a00aff7fdf1654ddfc2389d719b949427" kindref="member">TemplateDispatcher</ref>(<ref refid="classmessaging_1_1Queue" kindref="compound">Queue</ref><sp/>*queue,<sp/>PreviousDispatcher<sp/>*prev_ptr,<sp/>Func<sp/>&amp;&amp;func)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a1c84a8173b54823d7b95db4d4865e134" kindref="member">queue_ptr_</ref>(queue),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1aae5b9ea3d2b58005b6ddec368db2bcb0" kindref="member">func_</ref>(std::forward&lt;Func&gt;(func)),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a873bc46a8c8cff1ddcceb225ad252e01" kindref="member">prev_ptr_</ref>(prev_ptr),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a51f4255d452392ab1ca7d193d3209d4a" kindref="member">chained_</ref>(false)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a873bc46a8c8cff1ddcceb225ad252e01" kindref="member">prev_ptr_</ref>-&gt;chained_<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1ac52eebabf93ac84bc8eacc5c67e6ca9f" kindref="member">TemplateDispatcher</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1TemplateDispatcher" kindref="compound">TemplateDispatcher</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher" kindref="compound">TemplateDispatcher</ref>&amp;<sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a5d5e246da02eb04699e03cf40a129076" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1TemplateDispatcher" kindref="compound">TemplateDispatcher</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OtherMsg,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OtherFunc&gt;</highlight></codeline>
+<codeline lineno="35" refid="classmessaging_1_1TemplateDispatcher_1a06911b99af5573acede1d78ab6c4aa4f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher" kindref="compound">TemplateDispatcher&lt;TemplateDispatcher, OtherMsg, OtherFunc&gt;</ref><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a06911b99af5573acede1d78ab6c4aa4f" kindref="member">Handle</ref>(OtherFunc<sp/>&amp;&amp;other_func)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1TemplateDispatcher" kindref="compound">TemplateDispatcher&lt;TemplateDispatcher, OtherMsg, OtherFunc&gt;</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="classmessaging_1_1TemplateDispatcher_1a1c84a8173b54823d7b95db4d4865e134" kindref="member">queue_ptr_</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>std::forward&lt;OtherFunc&gt;(other_func));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classmessaging_1_1TemplateDispatcher_1abf090c18964d34afd84af5e03e90d9b7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1abf090c18964d34afd84af5e03e90d9b7" kindref="member">~TemplateDispatcher</ref>()<sp/>noexcept(false)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classmessaging_1_1TemplateDispatcher_1a51f4255d452392ab1ca7d193d3209d4a" kindref="member">chained_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1ab36064e19b91ff2ea8f37034b8de7f60" kindref="member">WaitAndDispatch</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46" refid="classmessaging_1_1TemplateDispatcher_1a1c84a8173b54823d7b95db4d4865e134" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classmessaging_1_1Queue" kindref="compound">Queue</ref><sp/>*<ref refid="classmessaging_1_1TemplateDispatcher_1a1c84a8173b54823d7b95db4d4865e134" kindref="member">queue_ptr_</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classmessaging_1_1TemplateDispatcher_1a873bc46a8c8cff1ddcceb225ad252e01" refkind="member"><highlight class="normal"><sp/><sp/>PreviousDispatcher<sp/>*<ref refid="classmessaging_1_1TemplateDispatcher_1a873bc46a8c8cff1ddcceb225ad252e01" kindref="member">prev_ptr_</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classmessaging_1_1TemplateDispatcher_1aae5b9ea3d2b58005b6ddec368db2bcb0" refkind="member"><highlight class="normal"><sp/><sp/>Func<sp/><ref refid="classmessaging_1_1TemplateDispatcher_1aae5b9ea3d2b58005b6ddec368db2bcb0" kindref="member">func_</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classmessaging_1_1TemplateDispatcher_1a51f4255d452392ab1ca7d193d3209d4a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a51f4255d452392ab1ca7d193d3209d4a" kindref="member">chained_</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>TemplateDispatcher<sp/>instances<sp/>are<sp/>friends<sp/>between<sp/>each<sp/>other;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Dispatcher,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OtherMsg,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OtherFunc&gt;</highlight></codeline>
+<codeline lineno="53" refid="classmessaging_1_1TemplateDispatcher_1ac52eebabf93ac84bc8eacc5c67e6ca9f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmessaging_1_1TemplateDispatcher" kindref="compound">TemplateDispatcher</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classmessaging_1_1TemplateDispatcher_1ab36064e19b91ff2ea8f37034b8de7f60" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1ab36064e19b91ff2ea8f37034b8de7f60" kindref="member">WaitAndDispatch</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>msg<sp/>=<sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a1c84a8173b54823d7b95db4d4865e134" kindref="member">queue_ptr_</ref>-&gt;<ref refid="classmessaging_1_1Queue_1a624adbac8b7f4b5ebf6bb0f9ab76bcc3" kindref="member">WaitAndPop</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classmessaging_1_1TemplateDispatcher_1a0e8673cb9d39a44f0a8332885efbde8d" kindref="member">Dispatch</ref>(msg))</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classmessaging_1_1TemplateDispatcher_1a0e8673cb9d39a44f0a8332885efbde8d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a0e8673cb9d39a44f0a8332885efbde8d" kindref="member">Dispatch</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;MessageBase&gt;<sp/>&amp;msg)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structmessaging_1_1WrappedMessage" kindref="compound">WrappedMessage&lt;Msg&gt;</ref><sp/>*wrapper<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="structmessaging_1_1WrappedMessage" kindref="compound">WrappedMessage&lt;Msg&gt;</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(msg.get()))<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1aae5b9ea3d2b58005b6ddec368db2bcb0" kindref="member">func_</ref>(wrapper-&gt;contents_);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1TemplateDispatcher_1a873bc46a8c8cff1ddcceb225ad252e01" kindref="member">prev_ptr_</ref>-&gt;Dispatch(msg);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>messaging</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SHACK_TEMPLATE_DISPATCHER_H</highlight></codeline>
+    </programlisting>
+    <location file="/root/Public/shack/atm/template_dispatcher.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,3759 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'classATM';
+  cp-name   = 'ATM';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1a8e0ede939f35c0a2818fdeda39ff586b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ATM';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'bank';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'interface_hardware';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1add4ca9f2b7c6ab6e0cb81cbcb925069e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Done';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a2aa23e220496bdd41d651151a1cc97e6';
+        sec-mem-ref-line = '37';
+        sec-mem-ref-name = 'GetSender';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1a03fb6655e150b1381a8aa595e4403d06';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Run';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '26';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad655bcb7436d78fba4b0d16ab9a15ff1';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'state_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ae530dbaa0e091b13f919542d002ef216';
+        sec-mem-ref-line = '143';
+        sec-mem-ref-name = 'WaitForCard';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1a2aa23e220496bdd41d651151a1cc97e6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetSender';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a59b7d4c15875982aef0399de08d1c6c0';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'incoming_';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1aa8ee553ff388f9977f1a504fed5eb946';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ProcessWithdrawal';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a59b7d4c15875982aef0399de08d1c6c0';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'incoming_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'receiver_8h_1a3f0e7b541159793eaec1e0fa6802d4d2';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'messaging::Receiver::Wait';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a6d9d0bf1da266ca951c7821bc4e84f9f';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'messaging::Dispatcher::Handle';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1aeffb0e1f17d32a7dcf2f84643390e614';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'interface_hardware_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a45c2bec3b3f822e15db0304d7ed26529';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'withdrawal_amount_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad4f43517a9785b318afb336355672efe';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'bank_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a25cd6fda12c3a95144d820de539adee6';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'account_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad655bcb7436d78fba4b0d16ab9a15ff1';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'state_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1accef2f77884d7272e7fe3cdfc210ba35';
+        sec-mem-ref-line = '154';
+        sec-mem-ref-name = 'DoneProcessing';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1a4adb797522de2abb66dadd033f11a8f7';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ProcessBalance';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '70';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a59b7d4c15875982aef0399de08d1c6c0';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'incoming_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'receiver_8h_1a3f0e7b541159793eaec1e0fa6802d4d2';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'messaging::Receiver::Wait';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a6d9d0bf1da266ca951c7821bc4e84f9f';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'messaging::Dispatcher::Handle';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1aeffb0e1f17d32a7dcf2f84643390e614';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'interface_hardware_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad655bcb7436d78fba4b0d16ab9a15ff1';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'state_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1adb4a5188bec74d4cd199acdd6e62941d';
+        sec-mem-ref-line = '83';
+        sec-mem-ref-name = 'WaitForAction';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1accef2f77884d7272e7fe3cdfc210ba35';
+        sec-mem-ref-line = '154';
+        sec-mem-ref-name = 'DoneProcessing';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1adb4a5188bec74d4cd199acdd6e62941d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'WaitForAction';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '83';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1aeffb0e1f17d32a7dcf2f84643390e614';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'interface_hardware_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a59b7d4c15875982aef0399de08d1c6c0';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'incoming_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'receiver_8h_1a3f0e7b541159793eaec1e0fa6802d4d2';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'messaging::Receiver::Wait';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a6d9d0bf1da266ca951c7821bc4e84f9f';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'messaging::Dispatcher::Handle';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a45c2bec3b3f822e15db0304d7ed26529';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'withdrawal_amount_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad4f43517a9785b318afb336355672efe';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'bank_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a25cd6fda12c3a95144d820de539adee6';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'account_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad655bcb7436d78fba4b0d16ab9a15ff1';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'state_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1aa8ee553ff388f9977f1a504fed5eb946';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'ProcessWithdrawal';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a4adb797522de2abb66dadd033f11a8f7';
+        sec-mem-ref-line = '70';
+        sec-mem-ref-name = 'ProcessBalance';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1accef2f77884d7272e7fe3cdfc210ba35';
+        sec-mem-ref-line = '154';
+        sec-mem-ref-name = 'DoneProcessing';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1a1378674f5e175c6f99cccb8b848e3512';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'VerifyingPin';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '103';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a59b7d4c15875982aef0399de08d1c6c0';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'incoming_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'receiver_8h_1a3f0e7b541159793eaec1e0fa6802d4d2';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'messaging::Receiver::Wait';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a6d9d0bf1da266ca951c7821bc4e84f9f';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'messaging::Dispatcher::Handle';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad655bcb7436d78fba4b0d16ab9a15ff1';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'state_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1adb4a5188bec74d4cd199acdd6e62941d';
+        sec-mem-ref-line = '83';
+        sec-mem-ref-name = 'WaitForAction';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1aeffb0e1f17d32a7dcf2f84643390e614';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'interface_hardware_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1accef2f77884d7272e7fe3cdfc210ba35';
+        sec-mem-ref-line = '154';
+        sec-mem-ref-name = 'DoneProcessing';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1a2a182a5996cbed4122a9c1afd2f1697a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GettingPin';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '120';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a59b7d4c15875982aef0399de08d1c6c0';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'incoming_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'receiver_8h_1a3f0e7b541159793eaec1e0fa6802d4d2';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'messaging::Receiver::Wait';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a6d9d0bf1da266ca951c7821bc4e84f9f';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'messaging::Dispatcher::Handle';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1abf1480605c201cac7d94e0057c372517';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'pin_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad4f43517a9785b318afb336355672efe';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'bank_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a25cd6fda12c3a95144d820de539adee6';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'account_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad655bcb7436d78fba4b0d16ab9a15ff1';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'state_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a1378674f5e175c6f99cccb8b848e3512';
+        sec-mem-ref-line = '103';
+        sec-mem-ref-name = 'VerifyingPin';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1accef2f77884d7272e7fe3cdfc210ba35';
+        sec-mem-ref-line = '154';
+        sec-mem-ref-name = 'DoneProcessing';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1ae530dbaa0e091b13f919542d002ef216';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'WaitForCard';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '143';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1aeffb0e1f17d32a7dcf2f84643390e614';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'interface_hardware_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a59b7d4c15875982aef0399de08d1c6c0';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'incoming_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'receiver_8h_1a3f0e7b541159793eaec1e0fa6802d4d2';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'messaging::Receiver::Wait';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a6d9d0bf1da266ca951c7821bc4e84f9f';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'messaging::Dispatcher::Handle';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a25cd6fda12c3a95144d820de539adee6';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'account_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1abf1480605c201cac7d94e0057c372517';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'pin_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad655bcb7436d78fba4b0d16ab9a15ff1';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'state_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1a2a182a5996cbed4122a9c1afd2f1697a';
+        sec-mem-ref-line = '120';
+        sec-mem-ref-name = 'GettingPin';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classATM_1accef2f77884d7272e7fe3cdfc210ba35';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'DoneProcessing';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '154';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1aeffb0e1f17d32a7dcf2f84643390e614';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'interface_hardware_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ad655bcb7436d78fba4b0d16ab9a15ff1';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'state_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'atm_8h_1ae530dbaa0e091b13f919542d002ef216';
+        sec-mem-ref-line = '143';
+        sec-mem-ref-name = 'WaitForCard';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classATM_1a59b7d4c15875982aef0399de08d1c6c0';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Receiver
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'incoming_';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classATM_1ad4f43517a9785b318afb336355672efe';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'bank_';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classATM_1aeffb0e1f17d32a7dcf2f84643390e614';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'interface_hardware_';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '43';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void(ATM::*
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'state_';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classATM_1a25cd6fda12c3a95144d820de539adee6';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'account_';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classATM_1a45c2bec3b3f822e15db0304d7ed26529';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'withdrawal_amount_';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classATM_1abf1480605c201cac7d94e0057c372517';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'pin_';
+      sec-mem-desc-file = '/root/Public/shack/atm/atm.h';
+      sec-mem-desc-line = '47';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/atm.h';
+  cp-fileline  = '16';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 186;
+        node-label = 'messaging::Sender';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Sender';
+        };
+        node-child = {
+          child-id = '187';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_ptr_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 187;
+        node-label = 'messaging::Queue';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Queue';
+        };
+      }; /* node */
+      node = {
+        node-id    = 188;
+        node-label = 'messaging::Receiver';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Receiver';
+        };
+        node-child = {
+          child-id = '187';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 185;
+        node-label = 'ATM';
+        node-link = {
+          node-link-id = 'classATM';
+        };
+        node-child = {
+          child-id = '186';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+interface_hardware_
+bank_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '188';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+incoming_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+struct = {
+  cp-id     = 'structBalance';
+  cp-name   = 'Balance';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structBalance_1a05b22821b169a5764e65c54baa1f6d36';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Balance';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'amount';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '101';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structBalance_1a5b2f1116c7c0db66012c63527212c042';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'amount_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '100';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '99';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structBalancePressed';
+  cp-name   = 'BalancePressed';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '109';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+class = {
+  cp-id     = 'classBankMachine';
+  cp-name   = 'BankMachine';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classBankMachine_1aafdb9bf4f04bec9c6ac3b9ec2229843e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'BankMachine';
+      sec-mem-desc-file = '/root/Public/shack/atm/bank_machine.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classBankMachine_1afaf799b68e5965bb473cee993fffee74';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Done';
+      sec-mem-desc-file = '/root/Public/shack/atm/bank_machine.h';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'bank__machine_8h_1a5d8bf0c5b153073a6bfa76bd2ee29acb';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'GetSender';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classBankMachine_1adba1d635c9837305c1e0fe4f70efdcdb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Run';
+      sec-mem-desc-file = '/root/Public/shack/atm/bank_machine.h';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'bank__machine_8h_1a80fe063f235cf02d33a2d70aeef6048c';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'incoming_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'receiver_8h_1a3f0e7b541159793eaec1e0fa6802d4d2';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'messaging::Receiver::Wait';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a6d9d0bf1da266ca951c7821bc4e84f9f';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'messaging::Dispatcher::Handle';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'bank__machine_8h_1ad299fdb18b1ee6e66374f70dde18d584';
+        sec-mem-ref-line = '60';
+        sec-mem-ref-name = 'balance_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'withdraw_8h_1aef16f3caa8a813007062a23d06ee4297';
+        sec-mem-ref-line = '16';
+        sec-mem-ref-name = 'Withdraw::amount_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'withdraw_8h_1ab629acf79446ce7dd973ed3c97c1c99c';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'Withdraw::atm_queue_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'withdraw_8h_1a469a494592b15655be79bc85c7202750';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'GetBalance::atm_queue_';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classBankMachine_1a5d8bf0c5b153073a6bfa76bd2ee29acb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetSender';
+      sec-mem-desc-file = '/root/Public/shack/atm/bank_machine.h';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'bank__machine_8h_1a80fe063f235cf02d33a2d70aeef6048c';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'incoming_';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classBankMachine_1a80fe063f235cf02d33a2d70aeef6048c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Receiver
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'incoming_';
+      sec-mem-desc-file = '/root/Public/shack/atm/bank_machine.h';
+      sec-mem-desc-line = '59';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classBankMachine_1ad299fdb18b1ee6e66374f70dde18d584';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'balance_';
+      sec-mem-desc-file = '/root/Public/shack/atm/bank_machine.h';
+      sec-mem-desc-line = '60';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/bank_machine.h';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 196;
+        node-label = 'messaging::Queue';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Queue';
+        };
+      }; /* node */
+      node = {
+        node-id    = 195;
+        node-label = 'messaging::Receiver';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Receiver';
+        };
+        node-child = {
+          child-id = '196';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 194;
+        node-label = 'BankMachine';
+        node-link = {
+          node-link-id = 'classBankMachine';
+        };
+        node-child = {
+          child-id = '195';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+incoming_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+struct = {
+  cp-id     = 'structCancelPressed';
+  cp-name   = 'CancelPressed';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '64';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structCancelWithdrawal';
+  cp-name   = 'CancelWithdrawal';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structCancelWithdrawal_1a57f5a52f8b47152f11e9cef892326c1e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'CancelWithdrawal';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'account';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'amount';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '33';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structCancelWithdrawal_1a4a081ab8be5299d5032139dbe774603f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'account_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structCancelWithdrawal_1a27d03ed0ebc0fbd59b82076431782bcf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'amount_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '29';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structCardInserted';
+  cp-name   = 'CardInserted';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structCardInserted_1ae0b0ec1c6170fd1ac7ccfb54fb8116c8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'CardInserted';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'account';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '48';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structCardInserted_1a9505cd0aa6f6faa1ef3a6203babfa5f9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'account_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '47';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '46';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structClearLastPressed';
+  cp-name   = 'ClearLastPressed';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '56';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+class = {
+  cp-id     = 'classmessaging_1_1CloseQueue';
+  cp-name   = 'messaging::CloseQueue';
+  cp-filename  = '/root/Public/shack/atm/dispatcher.h';
+  cp-fileline  = '16';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+struct = {
+  cp-id     = 'structDigitPressed';
+  cp-name   = 'DigitPressed';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structDigitPressed_1ac18455a16841020dce7f7eb52950bad8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'DigitPressed';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'digit';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structDigitPressed_1a4df37896f8d63954fc5673c9ff571317';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'digit_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '52';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '51';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+class = {
+  cp-id     = 'classmessaging_1_1Dispatcher';
+  cp-name   = 'messaging::Dispatcher';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1a80bdf7cb7e206ccb6709a74b1d015682';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Dispatcher';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Dispatcher &&
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'other';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1adb867c8b876c901d12154e12406e8ff8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Dispatcher';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Queue *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'queue';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1a6d9d0bf1da266ca951c7821bc4e84f9f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+TemplateDispatcher< Dispatcher, Message, Func >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Handle';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Func &&
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'f';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a877e071792b0e42b46c7d32836de0739';
+        sec-mem-ref-line = '37';
+        sec-mem-ref-name = 'queue_ptr_';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1ac17a4675e9a484de43bdf8914ab93d04';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~Dispatcher';
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a4db2da2c17f91e2c9b119b60fe4fee0a';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'chained_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a0318b520773a5c7a144fa8b9e8a0dd61';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'WaitAndDispatch';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1a6b50ba4fc04d8971bc9ddb3934c8134a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Dispatcher';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dispatcher &
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '40';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1a633a26a5b07d92045164800ba86c01e2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Dispatcher &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dispatcher &
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1a0318b520773a5c7a144fa8b9e8a0dd61';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'WaitAndDispatch';
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a877e071792b0e42b46c7d32836de0739';
+        sec-mem-ref-line = '37';
+        sec-mem-ref-name = 'queue_ptr_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'queue_8h_1a624adbac8b7f4b5ebf6bb0f9ab76bcc3';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'messaging::Queue::WaitAndPop';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a4fe4a8aa09f0f97676eef973cceb0ef5';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'Dispatch';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1a4fe4a8aa09f0f97676eef973cceb0ef5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Dispatch';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::shared_ptr< MessageBase > &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'msg';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1a877e071792b0e42b46c7d32836de0739';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Queue *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'queue_ptr_';
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1a4db2da2c17f91e2c9b119b60fe4fee0a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'chained_';
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'signal';
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'classmessaging_1_1Dispatcher_1ac52eebabf93ac84bc8eacc5c67e6ca9f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend class
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TemplateDispatcher';
+      sec-mem-desc-file = '/root/Public/shack/atm/dispatcher.h';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/dispatcher.h';
+  cp-fileline  = '18';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 210;
+        node-label = 'messaging::Dispatcher';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Dispatcher';
+        };
+        node-child = {
+          child-id = '211';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_ptr_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 211;
+        node-label = 'messaging::Queue';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Queue';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+struct = {
+  cp-id     = 'structDisplayBalance';
+  cp-name   = 'DisplayBalance';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structDisplayBalance_1a4795f3b85f330fa5474e14acc8c28926';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'DisplayBalance';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'amount';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '106';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structDisplayBalance_1ac6c41137f614b04130e57c4ca574cc7c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'amount_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '105';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '104';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structDisplayEnterCard';
+  cp-name   = 'DisplayEnterCard';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '84';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structDisplayEnterPin';
+  cp-name   = 'DisplayEnterPin';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '83';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structDisplayInsufficientFunds';
+  cp-name   = 'DisplayInsufficientFunds';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '85';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structDisplayPinIncorrectMessage';
+  cp-name   = 'DisplayPinIncorrectMessage';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '87';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structDisplayWithdrawalCancelled';
+  cp-name   = 'DisplayWithdrawalCancelled';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '86';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structDisplayWithdrawalOptions';
+  cp-name   = 'DisplayWithdrawalOptions';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '88';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structEjectCard';
+  cp-name   = 'EjectCard';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '57';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structGetBalance';
+  cp-name   = 'GetBalance';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structGetBalance_1a3c9b1bdf591755a52784b97de5ffd866';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetBalance';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'account';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'atm_queue';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '94';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structGetBalance_1a75b798e4035cf6468cc359db6ba0a4e9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'account_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '91';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structGetBalance_1a469a494592b15655be79bc85c7202750';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'atm_queue_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '92';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '90';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 230;
+        node-label = 'messaging::Sender';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Sender';
+        };
+        node-child = {
+          child-id = '231';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_ptr_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 231;
+        node-label = 'messaging::Queue';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Queue';
+        };
+      }; /* node */
+      node = {
+        node-id    = 229;
+        node-label = 'GetBalance';
+        node-link = {
+          node-link-id = 'structGetBalance';
+        };
+        node-child = {
+          child-id = '230';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+atm_queue_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+class = {
+  cp-id     = 'classInterfaceMachine';
+  cp-name   = 'InterfaceMachine';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classInterfaceMachine_1acfe81f2fdc61f1136d754b8f239e57ea';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Done';
+      sec-mem-desc-file = '/root/Public/shack/atm/interface_machine.h';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'interface__machine_8h_1a9b431c811e91a9a33254151b1734fd3a';
+        sec-mem-ref-line = '77';
+        sec-mem-ref-name = 'GetSender';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'messaging::Sender::Send';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classInterfaceMachine_1a046f9d3bb23bf7e0b53e68ad152d755d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Run';
+      sec-mem-desc-file = '/root/Public/shack/atm/interface_machine.h';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'interface__machine_8h_1a9a6baaba223e2a23ead6e80d25c02c59';
+        sec-mem-ref-line = '82';
+        sec-mem-ref-name = 'incoming_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'receiver_8h_1a3f0e7b541159793eaec1e0fa6802d4d2';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'messaging::Receiver::Wait';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dispatcher_8h_1a6d9d0bf1da266ca951c7821bc4e84f9f';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'messaging::Dispatcher::Handle';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'interface__machine_8h_1a00f26d214b26780bca26e8033d2d4921';
+        sec-mem-ref-line = '81';
+        sec-mem-ref-name = 'io_mutex_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'withdraw_8h_1ac6c41137f614b04130e57c4ca574cc7c';
+        sec-mem-ref-line = '105';
+        sec-mem-ref-name = 'DisplayBalance::amount_';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classInterfaceMachine_1a9b431c811e91a9a33254151b1734fd3a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetSender';
+      sec-mem-desc-file = '/root/Public/shack/atm/interface_machine.h';
+      sec-mem-desc-line = '77';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'interface__machine_8h_1a9a6baaba223e2a23ead6e80d25c02c59';
+        sec-mem-ref-line = '82';
+        sec-mem-ref-name = 'incoming_';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classInterfaceMachine_1a00f26d214b26780bca26e8033d2d4921';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::mutex
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'io_mutex_';
+      sec-mem-desc-file = '/root/Public/shack/atm/interface_machine.h';
+      sec-mem-desc-line = '81';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classInterfaceMachine_1a9a6baaba223e2a23ead6e80d25c02c59';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Receiver
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'incoming_';
+      sec-mem-desc-file = '/root/Public/shack/atm/interface_machine.h';
+      sec-mem-desc-line = '82';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/interface_machine.h';
+  cp-fileline  = '15';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 233;
+        node-label = 'InterfaceMachine';
+        node-link = {
+          node-link-id = 'classInterfaceMachine';
+        };
+        node-child = {
+          child-id = '234';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+incoming_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 235;
+        node-label = 'messaging::Queue';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Queue';
+        };
+      }; /* node */
+      node = {
+        node-id    = 234;
+        node-label = 'messaging::Receiver';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Receiver';
+        };
+        node-child = {
+          child-id = '235';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+struct = {
+  cp-id     = 'structIssueMoney';
+  cp-name   = 'IssueMoney';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structIssueMoney_1a955c7f727bcedad1929ab4e4240f3e0d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'IssueMoney';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'amount';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '68';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structIssueMoney_1a79a87d91b556fa635ad61ad654635c76';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'amount_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '67';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '66';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structmessaging_1_1MessageBase';
+  cp-name   = 'messaging::MessageBase';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'structmessaging_1_1WrappedMessage';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structmessaging_1_1MessageBase_1afe3211ee077797d75b5a6c549e2aff5f';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~MessageBase';
+      sec-mem-desc-file = '/root/Public/shack/atm/queue.h';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/queue.h';
+  cp-fileline  = '17';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 238;
+        node-label = 'messaging::MessageBase';
+        node-link = {
+          node-link-id = 'structmessaging_1_1MessageBase';
+        };
+      }; /* node */
+      node = {
+        node-id    = 239;
+        node-label = 'messaging::WrappedMessage< Msg >';
+        node-link = {
+          node-link-id = 'structmessaging_1_1WrappedMessage';
+        };
+        node-child = {
+          child-id = '238';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structPinIncorrect';
+  cp-name   = 'PinIncorrect';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '82';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structPinVerified';
+  cp-name   = 'PinVerified';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '81';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+class = {
+  cp-id     = 'classmessaging_1_1Queue';
+  cp-name   = 'messaging::Queue';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Queue_1a8ee0ac353ead8aca910d8073a2d5e16e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Push';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const T &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'msg';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/queue.h';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'queue_8h_1acb84af14fea49c09597be7ad19f9f3c5';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'mutex_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'queue_8h_1aae9c5f0bc7b5be870129c56643404551';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'queue_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'queue_8h_1aec7510ebff3d15176afdf3d93ca6fdc8';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'cond_var_';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Queue_1a624adbac8b7f4b5ebf6bb0f9ab76bcc3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::shared_ptr< MessageBase >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'WaitAndPop';
+      sec-mem-desc-file = '/root/Public/shack/atm/queue.h';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'queue_8h_1acb84af14fea49c09597be7ad19f9f3c5';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'mutex_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'queue_8h_1aec7510ebff3d15176afdf3d93ca6fdc8';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'cond_var_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'queue_8h_1aae9c5f0bc7b5be870129c56643404551';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'queue_';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1Queue_1acb84af14fea49c09597be7ad19f9f3c5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::mutex
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mutex_';
+      sec-mem-desc-file = '/root/Public/shack/atm/queue.h';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1Queue_1aec7510ebff3d15176afdf3d93ca6fdc8';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::condition_variable
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'cond_var_';
+      sec-mem-desc-file = '/root/Public/shack/atm/queue.h';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::queue< std::shared_ptr< MessageBase > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'queue_';
+      sec-mem-desc-file = '/root/Public/shack/atm/queue.h';
+      sec-mem-desc-line = '47';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/queue.h';
+  cp-fileline  = '27';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classmessaging_1_1Receiver';
+  cp-name   = 'messaging::Receiver';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Receiver_1a032cf4096825d90ae51404c8655db6f0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator Sender';
+      sec-mem-desc-file = '/root/Public/shack/atm/receiver.h';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'receiver_8h_1a5d1deaa42acaabf2837860e9672dc2d3';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'queue_';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Receiver_1a3f0e7b541159793eaec1e0fa6802d4d2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Dispatcher
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Wait';
+      sec-mem-desc-file = '/root/Public/shack/atm/receiver.h';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'receiver_8h_1a5d1deaa42acaabf2837860e9672dc2d3';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'queue_';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1Receiver_1a5d1deaa42acaabf2837860e9672dc2d3';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Queue
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'queue_';
+      sec-mem-desc-file = '/root/Public/shack/atm/receiver.h';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/receiver.h';
+  cp-fileline  = '16';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 249;
+        node-label = 'messaging::Queue';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Queue';
+        };
+      }; /* node */
+      node = {
+        node-id    = 248;
+        node-label = 'messaging::Receiver';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Receiver';
+        };
+        node-child = {
+          child-id = '249';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classmessaging_1_1Sender';
+  cp-name   = 'messaging::Sender';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Sender_1a40d7ba2c5bd94d249b47b518466870dc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Sender';
+      sec-mem-desc-file = '/root/Public/shack/atm/sender.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Sender_1a55b2718ff332f741494d3d90c7b83de2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Sender';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Queue *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'queue_ptr';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/sender.h';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Send';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Message &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'msg';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/sender.h';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'sender_8h_1a56aa7e425615eae331039cd66346b56c';
+        sec-mem-ref-line = '26';
+        sec-mem-ref-name = 'queue_ptr_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'queue_8h_1a8ee0ac353ead8aca910d8073a2d5e16e';
+        sec-mem-ref-line = '30';
+        sec-mem-ref-name = 'messaging::Queue::Push';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1Sender_1a56aa7e425615eae331039cd66346b56c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Queue *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'queue_ptr_';
+      sec-mem-desc-file = '/root/Public/shack/atm/sender.h';
+      sec-mem-desc-line = '26';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/sender.h';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 251;
+        node-label = 'messaging::Sender';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Sender';
+        };
+        node-child = {
+          child-id = '252';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_ptr_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 252;
+        node-label = 'messaging::Queue';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Queue';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classmessaging_1_1TemplateDispatcher';
+  cp-name   = 'messaging::TemplateDispatcher';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1ada53b5ba67f04fa2a8420cded172fdd1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TemplateDispatcher';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+TemplateDispatcher &&
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'other';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1a00aff7fdf1654ddfc2389d719b949427';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TemplateDispatcher';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Queue *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'queue';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+PreviousDispatcher *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'prev_ptr';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Func &&
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'func';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'template__dispatcher_8h_1a873bc46a8c8cff1ddcceb225ad252e01';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'messaging::TemplateDispatcher< PreviousDispatcher, Msg, Func >::prev_ptr_';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1a7ef05880e531ba95632f7c7e0c78f4a3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TemplateDispatcher';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const TemplateDispatcher &
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1a5d5e246da02eb04699e03cf40a129076';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+TemplateDispatcher &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const TemplateDispatcher &
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1a06911b99af5573acede1d78ab6c4aa4f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+TemplateDispatcher< TemplateDispatcher, OtherMsg, OtherFunc >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Handle';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+OtherFunc &&
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'other_func';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'template__dispatcher_8h_1a1c84a8173b54823d7b95db4d4865e134';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'messaging::TemplateDispatcher< PreviousDispatcher, Msg, Func >::queue_ptr_';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1abf090c18964d34afd84af5e03e90d9b7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~TemplateDispatcher';
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '40';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'template__dispatcher_8h_1a51f4255d452392ab1ca7d193d3209d4a';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'messaging::TemplateDispatcher< PreviousDispatcher, Msg, Func >::chained_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'template__dispatcher_8h_1ab36064e19b91ff2ea8f37034b8de7f60';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'messaging::TemplateDispatcher< PreviousDispatcher, Msg, Func >::WaitAndDispatch';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1ab36064e19b91ff2ea8f37034b8de7f60';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'WaitAndDispatch';
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'template__dispatcher_8h_1a1c84a8173b54823d7b95db4d4865e134';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'messaging::TemplateDispatcher< PreviousDispatcher, Msg, Func >::queue_ptr_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'queue_8h_1a624adbac8b7f4b5ebf6bb0f9ab76bcc3';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'messaging::Queue::WaitAndPop';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'template__dispatcher_8h_1a0e8673cb9d39a44f0a8332885efbde8d';
+        sec-mem-ref-line = '63';
+        sec-mem-ref-name = 'messaging::TemplateDispatcher< PreviousDispatcher, Msg, Func >::Dispatch';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1a0e8673cb9d39a44f0a8332885efbde8d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Dispatch';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::shared_ptr< MessageBase > &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'msg';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'template__dispatcher_8h_1aae5b9ea3d2b58005b6ddec368db2bcb0';
+        sec-mem-ref-line = '48';
+        sec-mem-ref-name = 'messaging::TemplateDispatcher< PreviousDispatcher, Msg, Func >::func_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'template__dispatcher_8h_1a873bc46a8c8cff1ddcceb225ad252e01';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'messaging::TemplateDispatcher< PreviousDispatcher, Msg, Func >::prev_ptr_';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1a1c84a8173b54823d7b95db4d4865e134';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Queue *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'queue_ptr_';
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1a873bc46a8c8cff1ddcceb225ad252e01';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+PreviousDispatcher *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'prev_ptr_';
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '47';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1aae5b9ea3d2b58005b6ddec368db2bcb0';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Func
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'func_';
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '48';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1a51f4255d452392ab1ca7d193d3209d4a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'chained_';
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'signal';
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'classmessaging_1_1TemplateDispatcher_1ac52eebabf93ac84bc8eacc5c67e6ca9f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend class
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TemplateDispatcher';
+      sec-mem-desc-file = '/root/Public/shack/atm/template_dispatcher.h';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/template_dispatcher.h';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 254;
+        node-label = 'messaging::TemplateDispatcher< PreviousDispatcher, Msg, Func >';
+        node-link = {
+          node-link-id = 'classmessaging_1_1TemplateDispatcher';
+        };
+        node-child = {
+          child-id = '255';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_ptr_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 255;
+        node-label = 'messaging::Queue';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Queue';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+struct = {
+  cp-id     = 'structVerifyPin';
+  cp-name   = 'VerifyPin';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structVerifyPin_1ac49a2deaf327f6582501ff5d9ea053cc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'VerifyPin';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'account';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'pin';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'atm_queue';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '75';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structVerifyPin_1a0b4159b0183995de748fd55840e2de33';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'account_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '72';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structVerifyPin_1a5e8e9f664be63fe55500009d1b2b5a63';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'pin_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '73';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structVerifyPin_1a20cfdc37bb37447bb3036921c6f85100';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'atm_queue_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '74';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '71';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 258;
+        node-label = 'messaging::Sender';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Sender';
+        };
+        node-child = {
+          child-id = '259';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_ptr_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 259;
+        node-label = 'messaging::Queue';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Queue';
+        };
+      }; /* node */
+      node = {
+        node-id    = 257;
+        node-label = 'VerifyPin';
+        node-link = {
+          node-link-id = 'structVerifyPin';
+        };
+        node-child = {
+          child-id = '258';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+atm_queue_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structWithdraw';
+  cp-name   = 'Withdraw';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structWithdraw_1af748f757c832cbf3dad2cc8f050a9826';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Withdraw';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'account';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'amount';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'atm_queue';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structWithdraw_1a3dcbc9569c0540c6d5fce8923a9c6109';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'account_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '15';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structWithdraw_1aef16f3caa8a813007062a23d06ee4297';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'amount_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structWithdraw_1ab629acf79446ce7dd973ed3c97c1c99c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+messaging::Sender
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'atm_queue_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 262;
+        node-label = 'messaging::Sender';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Sender';
+        };
+        node-child = {
+          child-id = '263';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+queue_ptr_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 263;
+        node-label = 'messaging::Queue';
+        node-link = {
+          node-link-id = 'classmessaging_1_1Queue';
+        };
+      }; /* node */
+      node = {
+        node-id    = 261;
+        node-label = 'Withdraw';
+        node-link = {
+          node-link-id = 'structWithdraw';
+        };
+        node-child = {
+          child-id = '262';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+atm_queue_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structWithdrawDenied';
+  cp-name   = 'WithdrawDenied';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '27';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structWithdrawOK';
+  cp-name   = 'WithdrawOK';
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '25';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structWithdrawPressed';
+  cp-name   = 'WithdrawPressed';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structWithdrawPressed_1a10f3534e069eca23e8ddffe58c34faf6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'WithdrawPressed';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'amount';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '61';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structWithdrawPressed_1ab812bf1504edd7e606dc5fa6b52f6f46';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'amount_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '60';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '59';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structWithdrawProcessed';
+  cp-name   = 'WithdrawProcessed';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structWithdrawProcessed_1aeb8e5c4e04a0c3abf6071bac464115b8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'WithdrawProcessed';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'account';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'amount';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structWithdrawProcessed_1afa3ac4805902cdbc81215c07d004fe38';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'account_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structWithdrawProcessed_1ad80c4901e941fb58a74c1b116abcf467';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'amount_';
+      sec-mem-desc-file = '/root/Public/shack/atm/withdraw.h';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/withdraw.h';
+  cp-fileline  = '37';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structmessaging_1_1WrappedMessage';
+  cp-name   = 'messaging::WrappedMessage';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'structmessaging_1_1MessageBase';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structmessaging_1_1WrappedMessage_1a1c4326bb674fcb8c82e77554618d4c46';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'WrappedMessage';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Msg &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'contents';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/root/Public/shack/atm/queue.h';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structmessaging_1_1WrappedMessage_1a7bd8849ddcc85328985384636caa7199';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Msg
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'contents_';
+      sec-mem-desc-file = '/root/Public/shack/atm/queue.h';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/root/Public/shack/atm/queue.h';
+  cp-fileline  = '22';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 273;
+        node-label = 'messaging::MessageBase';
+        node-link = {
+          node-link-id = 'structmessaging_1_1MessageBase';
+        };
+      }; /* node */
+      node = {
+        node-id    = 272;
+        node-label = 'messaging::WrappedMessage< Msg >';
+        node-link = {
+          node-link-id = 'structmessaging_1_1WrappedMessage';
+        };
+        node-child = {
+          child-id = '273';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 275;
+        node-label = 'messaging::MessageBase';
+        node-link = {
+          node-link-id = 'structmessaging_1_1MessageBase';
+        };
+      }; /* node */
+      node = {
+        node-id    = 274;
+        node-label = 'messaging::WrappedMessage< Msg >';
+        node-link = {
+          node-link-id = 'structmessaging_1_1WrappedMessage';
+        };
+        node-child = {
+          child-id = '275';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+file = {
+  file-id   = 'atm_8h';
+  file-name = 'atm.h';
+  file-full-name  = '/root/Public/shack/atm/atm.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'atm__env_8h';
+  file-name = 'atm_env.h';
+  file-full-name  = '/root/Public/shack/atm/atm_env.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'bank__machine_8h';
+  file-name = 'bank_machine.h';
+  file-full-name  = '/root/Public/shack/atm/bank_machine.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'dispatcher_8cpp';
+  file-name = 'dispatcher.cpp';
+  file-full-name  = '/root/Public/shack/atm/dispatcher.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'dispatcher_8h';
+  file-name = 'dispatcher.h';
+  file-full-name  = '/root/Public/shack/atm/dispatcher.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'interface__machine_8h';
+  file-name = 'interface_machine.h';
+  file-full-name  = '/root/Public/shack/atm/interface_machine.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'main_8cpp';
+  file-name = 'main.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-desc-file = '/root/Public/shack/atm/main.cpp';
+      func-mem-desc-line = '14';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'bank__machine_8h_1a5d8bf0c5b153073a6bfa76bd2ee29acb';
+        func-mem-ref-line = '55';
+        func-mem-ref-name = 'BankMachine::GetSender';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'interface__machine_8h_1a9b431c811e91a9a33254151b1734fd3a';
+        func-mem-ref-line = '77';
+        func-mem-ref-name = 'InterfaceMachine::GetSender';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'bank__machine_8h_1adba1d635c9837305c1e0fe4f70efdcdb';
+        func-mem-ref-line = '22';
+        func-mem-ref-name = 'BankMachine::Run';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'interface__machine_8h_1a046f9d3bb23bf7e0b53e68ad152d755d';
+        func-mem-ref-line = '21';
+        func-mem-ref-name = 'InterfaceMachine::Run';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'atm_8h_1a03fb6655e150b1381a8aa595e4403d06';
+        func-mem-ref-line = '26';
+        func-mem-ref-name = 'ATM::Run';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'bank__machine_8h_1afaf799b68e5965bb473cee993fffee74';
+        func-mem-ref-line = '18';
+        func-mem-ref-name = 'BankMachine::Done';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'interface__machine_8h_1acfe81f2fdc61f1136d754b8f239e57ea';
+        func-mem-ref-line = '17';
+        func-mem-ref-name = 'InterfaceMachine::Done';
+    };
+    }; /* func-member */
+    };
+  file-full-name  = '/root/Public/shack/atm/main.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'queue_8cpp';
+  file-name = 'queue.cpp';
+  file-full-name  = '/root/Public/shack/atm/queue.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'queue_8h';
+  file-name = 'queue.h';
+  file-full-name  = '/root/Public/shack/atm/queue.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'receiver_8cpp';
+  file-name = 'receiver.cpp';
+  file-full-name  = '/root/Public/shack/atm/receiver.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'receiver_8h';
+  file-name = 'receiver.h';
+  file-full-name  = '/root/Public/shack/atm/receiver.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'sender_8cpp';
+  file-name = 'sender.cpp';
+  file-full-name  = '/root/Public/shack/atm/sender.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'sender_8h';
+  file-name = 'sender.h';
+  file-full-name  = '/root/Public/shack/atm/sender.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'template__dispatcher_8cpp';
+  file-name = 'template_dispatcher.cpp';
+  file-full-name  = '/root/Public/shack/atm/template_dispatcher.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'template__dispatcher_8h';
+  file-name = 'template_dispatcher.h';
+  file-full-name  = '/root/Public/shack/atm/template_dispatcher.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'withdraw_8h';
+  file-name = 'withdraw.h';
+  file-full-name  = '/root/Public/shack/atm/withdraw.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */

@@ -1,20 +1,21 @@
 SRC_UNIT = $(wildcard *.cpp)
 OBJ_UNIT = $(patsubst %.cpp,%.o,$(notdir ${SRC_UNIT}))
+HEAD_UNIT = $(wildcard ${ROOT_DIR}/common/*.h)
 
-MICROSOFT_TARGET= microsoft_intern
+UNIT_TEST = unit_test
 
-all: $(MICROSOFT_TARGET)
+all: $(UNIT_TEST)
 
 $(OBJ_UNIT):%.o:%.cpp
 	$(XX) $(CPP_FLAGS) -c $< -o $@
 
-$(MICROSOFT_TARGET): $(MICROSOFT_TARGET).cpp
-	$(XX) $(CPP_FLAGS) $(INCLUDE) $(MICROSOFT_TARGET).cpp -o $(MICROSOFT_TARGET) -l:libcommon.a -L$(LIBS_DIR) 
+$(UNIT_TEST): $(UNIT_TEST).cpp $(HEAD_UNIT)
+	$(XX) $(CPP_FLAGS) -lboost_unit_test_framework -l:libcommon.a -L$(LIBS_DIR) $(INCLUDE) $(UNIT_TEST).cpp -o $(UNIT_TEST)  
 
 .PHONY: DYNAMIC
-DYNAMIC:$(MICROSOFT_TARGET).cpp
-	$(XX) $(CPP_FLAGS) -lcommon -L$(LIBS_DIR) $(INCLUDE) $(MICROSOFT_TARGET).cpp -o $(MICROSOFT_TARGET)
+DYNAMIC:$(UNIT_TEST).cpp $(HEAD_UNIT)
+	$(XX) $(CPP_FLAGS) -lboost_unit_test_framework -lcommon -L$(LIBS_DIR) $(INCLUDE) $(UNIT_TEST).cpp -o $(UNIT_TEST)
 
 .PHONY: clean
 clean :
-	rm -f *.o $(TARGET_BIN)
+	rm -fr *.o $(UNIT_TEST)

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="receiver_8h" kind="file">
+    <compoundname>receiver.h</compoundname>
+    <includes refid="queue_8h" local="yes">queue.h</includes>
+    <includes refid="sender_8h" local="yes">sender.h</includes>
+    <includes refid="dispatcher_8h" local="yes">dispatcher.h</includes>
+    <includedby refid="atm_8h" local="yes">/root/Public/shack/atm/atm.h</includedby>
+    <includedby refid="bank__machine_8h" local="yes">/root/Public/shack/atm/bank_machine.h</includedby>
+    <includedby refid="interface__machine_8h" local="yes">/root/Public/shack/atm/interface_machine.h</includedby>
+    <includedby refid="receiver_8cpp" local="yes">/root/Public/shack/atm/receiver.cpp</includedby>
+    <incdepgraph>
+      <node id="346">
+        <label>queue</label>
+      </node>
+      <node id="343">
+        <label>queue.h</label>
+        <link refid="queue_8h"/>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>sender.h</label>
+        <link refid="sender_8h"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>/root/Public/shack/atm/receiver.h</label>
+        <link refid="receiver.h"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>template_dispatcher.h</label>
+        <link refid="template__dispatcher_8h"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>condition_variable</label>
+      </node>
+      <node id="349">
+        <label>dispatcher.h</label>
+        <link refid="dispatcher_8h"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>utility</label>
+      </node>
+      <node id="344">
+        <label>mutex</label>
+      </node>
+      <node id="347">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="356">
+        <label>/root/Public/shack/atm/interface_machine.h</label>
+        <link refid="interface__machine_8h"/>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>/root/Public/shack/atm/receiver.h</label>
+        <link refid="receiver.h"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+      </node>
+      <node id="354">
+        <label>/root/Public/shack/atm/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="355">
+        <label>/root/Public/shack/atm/bank_machine.h</label>
+        <link refid="bank__machine_8h"/>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>/root/Public/shack/atm/receiver.cpp</label>
+        <link refid="receiver_8cpp"/>
+      </node>
+      <node id="353">
+        <label>/root/Public/shack/atm/atm.h</label>
+        <link refid="atm_8h"/>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmessaging_1_1Receiver" prot="public">messaging::Receiver</innerclass>
+    <innernamespace refid="namespacemessaging">messaging</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>zeal4u<sp/>on<sp/>2019/3/28.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/>:<sp/>zeal4u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Email:<sp/>jsz1995@live.com</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SHACK_RECEIVER_H</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SHACK_RECEIVER_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="queue_8h" kindref="compound">queue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sender_8h" kindref="compound">sender.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dispatcher_8h" kindref="compound">dispatcher.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">messaging<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classmessaging_1_1Receiver" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmessaging_1_1Receiver" kindref="compound">Receiver</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>implicit<sp/>conversion<sp/>to<sp/>Sender</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classmessaging_1_1Receiver_1a032cf4096825d90ae51404c8655db6f0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1Sender" kindref="compound">Sender</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1Sender" kindref="compound">Sender</ref>(&amp;<ref refid="classmessaging_1_1Receiver_1a5d1deaa42acaabf2837860e9672dc2d3" kindref="member">queue_</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classmessaging_1_1Receiver_1a3f0e7b541159793eaec1e0fa6802d4d2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classmessaging_1_1Dispatcher" kindref="compound">Dispatcher</ref><sp/><ref refid="classmessaging_1_1Receiver_1a3f0e7b541159793eaec1e0fa6802d4d2" kindref="member">Wait</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1Dispatcher" kindref="compound">Dispatcher</ref>(&amp;<ref refid="classmessaging_1_1Receiver_1a5d1deaa42acaabf2837860e9672dc2d3" kindref="member">queue_</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="classmessaging_1_1Receiver_1a5d1deaa42acaabf2837860e9672dc2d3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classmessaging_1_1Queue" kindref="compound">Queue</ref><sp/><ref refid="classmessaging_1_1Receiver_1a5d1deaa42acaabf2837860e9672dc2d3" kindref="member">queue_</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>messaging</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SHACK_RECEIVER_H</highlight></codeline>
+    </programlisting>
+    <location file="/root/Public/shack/atm/receiver.h"/>
+  </compounddef>
+</doxygen>

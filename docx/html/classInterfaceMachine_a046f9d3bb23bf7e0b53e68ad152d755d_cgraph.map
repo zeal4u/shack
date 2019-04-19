@@ -1,0 +1,4 @@
+<map id="InterfaceMachine::Run" name="InterfaceMachine::Run">
+<area shape="rect" id="node2" href="$classmessaging_1_1Receiver.html#a3f0e7b541159793eaec1e0fa6802d4d2" title="messaging::Receiver\l::Wait" alt="" coords="214,5,359,46"/>
+<area shape="rect" id="node3" href="$classmessaging_1_1Dispatcher.html#a6d9d0bf1da266ca951c7821bc4e84f9f" title="messaging::Dispatcher\l::Handle" alt="" coords="209,70,365,111"/>
+</map>

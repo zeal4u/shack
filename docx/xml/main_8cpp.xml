@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="main_8cpp" kind="file">
+    <compoundname>main.cpp</compoundname>
+    <includes refid="bank__machine_8h" local="yes">bank_machine.h</includes>
+    <includes refid="interface__machine_8h" local="yes">interface_machine.h</includes>
+    <includes refid="atm_8h" local="yes">atm.h</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="297">
+        <label>interface_machine.h</label>
+        <link refid="interface__machine_8h"/>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>queue</label>
+      </node>
+      <node id="287">
+        <label>queue.h</label>
+        <link refid="queue_8h"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>string</label>
+      </node>
+      <node id="286">
+        <label>sender.h</label>
+        <link refid="sender_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>withdraw.h</label>
+        <link refid="withdraw_8h"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>receiver.h</label>
+        <link refid="receiver_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>template_dispatcher.h</label>
+        <link refid="template__dispatcher_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>condition_variable</label>
+      </node>
+      <node id="301">
+        <label>cstdio</label>
+      </node>
+      <node id="294">
+        <label>dispatcher.h</label>
+        <link refid="dispatcher_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>utility</label>
+      </node>
+      <node id="283">
+        <label>/root/Public/shack/atm/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>iostream</label>
+      </node>
+      <node id="284">
+        <label>bank_machine.h</label>
+        <link refid="bank__machine_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>mutex</label>
+      </node>
+      <node id="300">
+        <label>thread</label>
+      </node>
+      <node id="299">
+        <label>atm.h</label>
+        <link refid="atm_8h"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/main.cpp" line="14" column="1" bodyfile="/root/Public/shack/atm/main.cpp" bodystart="14" bodyend="71"/>
+        <references refid="classBankMachine_1a5d8bf0c5b153073a6bfa76bd2ee29acb" compoundref="bank__machine_8h" startline="55" endline="57">BankMachine::GetSender</references>
+        <references refid="classInterfaceMachine_1a9b431c811e91a9a33254151b1734fd3a" compoundref="interface__machine_8h" startline="77" endline="79">InterfaceMachine::GetSender</references>
+        <references refid="classBankMachine_1adba1d635c9837305c1e0fe4f70efdcdb" compoundref="bank__machine_8h" startline="22" endline="53">BankMachine::Run</references>
+        <references refid="classInterfaceMachine_1a046f9d3bb23bf7e0b53e68ad152d755d" compoundref="interface__machine_8h" startline="21" endline="75">InterfaceMachine::Run</references>
+        <references refid="classATM_1a03fb6655e150b1381a8aa595e4403d06" compoundref="atm_8h" startline="26" endline="35">ATM::Run</references>
+        <references refid="classBankMachine_1afaf799b68e5965bb473cee993fffee74" compoundref="bank__machine_8h" startline="18" endline="20">BankMachine::Done</references>
+        <references refid="classInterfaceMachine_1acfe81f2fdc61f1136d754b8f239e57ea" compoundref="interface__machine_8h" startline="17" endline="19">InterfaceMachine::Done</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>zeal4u<sp/>on<sp/>2019/3/29.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/>:<sp/>zeal4u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Email<sp/>:<sp/>jsz1995@live.com</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bank__machine_8h" kindref="compound">bank_machine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="interface__machine_8h" kindref="compound">interface_machine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="atm_8h" kindref="compound">atm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><ref refid="classBankMachine" kindref="compound">BankMachine</ref><sp/>bank;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><ref refid="classInterfaceMachine" kindref="compound">InterfaceMachine</ref><sp/>interface_hardware;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><ref refid="classATM" kindref="compound">ATM</ref><sp/>machine(bank.<ref refid="classBankMachine_1a5d8bf0c5b153073a6bfa76bd2ee29acb" kindref="member">GetSender</ref>(),<sp/>interface_hardware.<ref refid="classInterfaceMachine_1a9b431c811e91a9a33254151b1734fd3a" kindref="member">GetSender</ref>());</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>std::thread<sp/>bank_thread(&amp;<ref refid="classBankMachine_1adba1d635c9837305c1e0fe4f70efdcdb" kindref="member">BankMachine::Run</ref>,<sp/>&amp;bank);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>std::thread<sp/>if_thread(&amp;<ref refid="classInterfaceMachine_1a046f9d3bb23bf7e0b53e68ad152d755d" kindref="member">InterfaceMachine::Run</ref>,<sp/>&amp;interface_hardware);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>std::thread<sp/>atm_thread(&amp;<ref refid="classATM_1a03fb6655e150b1381a8aa595e4403d06" kindref="member">ATM::Run</ref>,<sp/>&amp;machine);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="classmessaging_1_1Sender" kindref="compound">messaging::Sender</ref><sp/>atm_queue(machine.GetSender());</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>quit_pressed<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!quit_pressed)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>discard<sp/>&apos;\n&apos;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>getchar();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(c<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(c)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;2&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;3&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;4&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;5&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;6&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;7&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atm_queue.Send(<ref refid="structDigitPressed" kindref="compound">DigitPressed</ref>(c));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;b&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atm_queue.Send(<ref refid="structBalancePressed" kindref="compound">BalancePressed</ref>());</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atm_queue.Send(<ref refid="structWithdrawPressed" kindref="compound">WithdrawPressed</ref>(50));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;c&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atm_queue.Send(<ref refid="structCancelPressed" kindref="compound">CancelPressed</ref>());</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atm_queue.Send(<ref refid="structCardInserted" kindref="compound">CardInserted</ref>(</highlight><highlight class="stringliteral">&quot;love<sp/>weijing&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;q&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quit_pressed<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Unsupported<sp/>operation!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>bank.<ref refid="classBankMachine_1afaf799b68e5965bb473cee993fffee74" kindref="member">Done</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>machine.Done();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>interface_hardware.<ref refid="classInterfaceMachine_1acfe81f2fdc61f1136d754b8f239e57ea" kindref="member">Done</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>atm_thread.join();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>bank_thread.join();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>if_thread.join();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/root/Public/shack/atm/main.cpp"/>
+  </compounddef>
+</doxygen>

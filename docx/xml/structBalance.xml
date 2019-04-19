@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structBalance" kind="struct" prot="public">
+    <compoundname>Balance</compoundname>
+    <includes refid="withdraw_8h" local="no">withdraw.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBalance_1a5b2f1116c7c0db66012c63527212c042" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Balance::amount_</definition>
+        <argsstring></argsstring>
+        <name>amount_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="100" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structBalance_1a05b22821b169a5764e65c54baa1f6d36" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Balance::Balance</definition>
+        <argsstring>(unsigned amount)</argsstring>
+        <name>Balance</name>
+        <param>
+          <type>unsigned</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="101" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/root/Public/shack/atm/withdraw.h" line="99" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="99" bodyend="102"/>
+    <listofallmembers>
+      <member refid="structBalance_1a5b2f1116c7c0db66012c63527212c042" prot="public" virt="non-virtual"><scope>Balance</scope><name>amount_</name></member>
+      <member refid="structBalance_1a05b22821b169a5764e65c54baa1f6d36" prot="public" virt="non-virtual"><scope>Balance</scope><name>Balance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

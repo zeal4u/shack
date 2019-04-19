@@ -1,0 +1,282 @@
+\hypertarget{classATM}{\section{A\-T\-M Class Reference}
+\label{classATM}\index{A\-T\-M@{A\-T\-M}}
+}
+
+
+{\ttfamily \#include $<$atm.\-h$>$}
+
+
+
+Collaboration diagram for A\-T\-M\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classATM__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classATM_a8e0ede939f35c0a2818fdeda39ff586b}{A\-T\-M} (\hyperlink{classmessaging_1_1Sender}{messaging\-::\-Sender} bank, \hyperlink{classmessaging_1_1Sender}{messaging\-::\-Sender} interface\-\_\-hardware)
+\item 
+void \hyperlink{classATM_add4ca9f2b7c6ab6e0cb81cbcb925069e}{Done} ()
+\item 
+void \hyperlink{classATM_a03fb6655e150b1381a8aa595e4403d06}{Run} ()
+\item 
+\hyperlink{classmessaging_1_1Sender}{messaging\-::\-Sender} \hyperlink{classATM_a2aa23e220496bdd41d651151a1cc97e6}{Get\-Sender} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classATM_aa8ee553ff388f9977f1a504fed5eb946}{Process\-Withdrawal} ()
+\item 
+void \hyperlink{classATM_a4adb797522de2abb66dadd033f11a8f7}{Process\-Balance} ()
+\item 
+void \hyperlink{classATM_adb4a5188bec74d4cd199acdd6e62941d}{Wait\-For\-Action} ()
+\item 
+void \hyperlink{classATM_a1378674f5e175c6f99cccb8b848e3512}{Verifying\-Pin} ()
+\item 
+void \hyperlink{classATM_a2a182a5996cbed4122a9c1afd2f1697a}{Getting\-Pin} ()
+\item 
+void \hyperlink{classATM_ae530dbaa0e091b13f919542d002ef216}{Wait\-For\-Card} ()
+\item 
+void \hyperlink{classATM_accef2f77884d7272e7fe3cdfc210ba35}{Done\-Processing} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmessaging_1_1Receiver}{messaging\-::\-Receiver} \hyperlink{classATM_a59b7d4c15875982aef0399de08d1c6c0}{incoming\-\_\-}
+\item 
+\hyperlink{classmessaging_1_1Sender}{messaging\-::\-Sender} \hyperlink{classATM_ad4f43517a9785b318afb336355672efe}{bank\-\_\-}
+\item 
+\hyperlink{classmessaging_1_1Sender}{messaging\-::\-Sender} \hyperlink{classATM_aeffb0e1f17d32a7dcf2f84643390e614}{interface\-\_\-hardware\-\_\-}
+\item 
+void(A\-T\-M\-::$\ast$ \hyperlink{classATM_ad655bcb7436d78fba4b0d16ab9a15ff1}{state\-\_\-} )()
+\item 
+std\-::string \hyperlink{classATM_a25cd6fda12c3a95144d820de539adee6}{account\-\_\-}
+\item 
+unsigned \hyperlink{classATM_a45c2bec3b3f822e15db0304d7ed26529}{withdrawal\-\_\-amount\-\_\-}
+\item 
+std\-::string \hyperlink{classATM_abf1480605c201cac7d94e0057c372517}{pin\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classATM_a8e0ede939f35c0a2818fdeda39ff586b}{\index{A\-T\-M@{A\-T\-M}!A\-T\-M@{A\-T\-M}}
+\index{A\-T\-M@{A\-T\-M}!ATM@{A\-T\-M}}
+\subsubsection[{A\-T\-M}]{\setlength{\rightskip}{0pt plus 5cm}A\-T\-M\-::\-A\-T\-M (
+\begin{DoxyParamCaption}
+\item[{{\bf messaging\-::\-Sender}}]{bank, }
+\item[{{\bf messaging\-::\-Sender}}]{interface\-\_\-hardware}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classATM_a8e0ede939f35c0a2818fdeda39ff586b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classATM_add4ca9f2b7c6ab6e0cb81cbcb925069e}{\index{A\-T\-M@{A\-T\-M}!Done@{Done}}
+\index{Done@{Done}!ATM@{A\-T\-M}}
+\subsubsection[{Done}]{\setlength{\rightskip}{0pt plus 5cm}void A\-T\-M\-::\-Done (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classATM_add4ca9f2b7c6ab6e0cb81cbcb925069e}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classATM_add4ca9f2b7c6ab6e0cb81cbcb925069e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classATM_accef2f77884d7272e7fe3cdfc210ba35}{\index{A\-T\-M@{A\-T\-M}!Done\-Processing@{Done\-Processing}}
+\index{Done\-Processing@{Done\-Processing}!ATM@{A\-T\-M}}
+\subsubsection[{Done\-Processing}]{\setlength{\rightskip}{0pt plus 5cm}void A\-T\-M\-::\-Done\-Processing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classATM_accef2f77884d7272e7fe3cdfc210ba35}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classATM_accef2f77884d7272e7fe3cdfc210ba35_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classATM_a2aa23e220496bdd41d651151a1cc97e6}{\index{A\-T\-M@{A\-T\-M}!Get\-Sender@{Get\-Sender}}
+\index{Get\-Sender@{Get\-Sender}!ATM@{A\-T\-M}}
+\subsubsection[{Get\-Sender}]{\setlength{\rightskip}{0pt plus 5cm}{\bf messaging\-::\-Sender} A\-T\-M\-::\-Get\-Sender (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classATM_a2aa23e220496bdd41d651151a1cc97e6}
+\hypertarget{classATM_a2a182a5996cbed4122a9c1afd2f1697a}{\index{A\-T\-M@{A\-T\-M}!Getting\-Pin@{Getting\-Pin}}
+\index{Getting\-Pin@{Getting\-Pin}!ATM@{A\-T\-M}}
+\subsubsection[{Getting\-Pin}]{\setlength{\rightskip}{0pt plus 5cm}void A\-T\-M\-::\-Getting\-Pin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classATM_a2a182a5996cbed4122a9c1afd2f1697a}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classATM_a2a182a5996cbed4122a9c1afd2f1697a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classATM_a4adb797522de2abb66dadd033f11a8f7}{\index{A\-T\-M@{A\-T\-M}!Process\-Balance@{Process\-Balance}}
+\index{Process\-Balance@{Process\-Balance}!ATM@{A\-T\-M}}
+\subsubsection[{Process\-Balance}]{\setlength{\rightskip}{0pt plus 5cm}void A\-T\-M\-::\-Process\-Balance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classATM_a4adb797522de2abb66dadd033f11a8f7}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classATM_a4adb797522de2abb66dadd033f11a8f7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classATM_aa8ee553ff388f9977f1a504fed5eb946}{\index{A\-T\-M@{A\-T\-M}!Process\-Withdrawal@{Process\-Withdrawal}}
+\index{Process\-Withdrawal@{Process\-Withdrawal}!ATM@{A\-T\-M}}
+\subsubsection[{Process\-Withdrawal}]{\setlength{\rightskip}{0pt plus 5cm}void A\-T\-M\-::\-Process\-Withdrawal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classATM_aa8ee553ff388f9977f1a504fed5eb946}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classATM_aa8ee553ff388f9977f1a504fed5eb946_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classATM_a03fb6655e150b1381a8aa595e4403d06}{\index{A\-T\-M@{A\-T\-M}!Run@{Run}}
+\index{Run@{Run}!ATM@{A\-T\-M}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void A\-T\-M\-::\-Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classATM_a03fb6655e150b1381a8aa595e4403d06}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classATM_a03fb6655e150b1381a8aa595e4403d06_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classATM_a1378674f5e175c6f99cccb8b848e3512}{\index{A\-T\-M@{A\-T\-M}!Verifying\-Pin@{Verifying\-Pin}}
+\index{Verifying\-Pin@{Verifying\-Pin}!ATM@{A\-T\-M}}
+\subsubsection[{Verifying\-Pin}]{\setlength{\rightskip}{0pt plus 5cm}void A\-T\-M\-::\-Verifying\-Pin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classATM_a1378674f5e175c6f99cccb8b848e3512}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classATM_a1378674f5e175c6f99cccb8b848e3512_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classATM_adb4a5188bec74d4cd199acdd6e62941d}{\index{A\-T\-M@{A\-T\-M}!Wait\-For\-Action@{Wait\-For\-Action}}
+\index{Wait\-For\-Action@{Wait\-For\-Action}!ATM@{A\-T\-M}}
+\subsubsection[{Wait\-For\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void A\-T\-M\-::\-Wait\-For\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classATM_adb4a5188bec74d4cd199acdd6e62941d}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classATM_adb4a5188bec74d4cd199acdd6e62941d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classATM_ae530dbaa0e091b13f919542d002ef216}{\index{A\-T\-M@{A\-T\-M}!Wait\-For\-Card@{Wait\-For\-Card}}
+\index{Wait\-For\-Card@{Wait\-For\-Card}!ATM@{A\-T\-M}}
+\subsubsection[{Wait\-For\-Card}]{\setlength{\rightskip}{0pt plus 5cm}void A\-T\-M\-::\-Wait\-For\-Card (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classATM_ae530dbaa0e091b13f919542d002ef216}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classATM_ae530dbaa0e091b13f919542d002ef216_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classATM_a25cd6fda12c3a95144d820de539adee6}{\index{A\-T\-M@{A\-T\-M}!account\-\_\-@{account\-\_\-}}
+\index{account\-\_\-@{account\-\_\-}!ATM@{A\-T\-M}}
+\subsubsection[{account\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string A\-T\-M\-::account\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classATM_a25cd6fda12c3a95144d820de539adee6}
+\hypertarget{classATM_ad4f43517a9785b318afb336355672efe}{\index{A\-T\-M@{A\-T\-M}!bank\-\_\-@{bank\-\_\-}}
+\index{bank\-\_\-@{bank\-\_\-}!ATM@{A\-T\-M}}
+\subsubsection[{bank\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf messaging\-::\-Sender} A\-T\-M\-::bank\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classATM_ad4f43517a9785b318afb336355672efe}
+\hypertarget{classATM_a59b7d4c15875982aef0399de08d1c6c0}{\index{A\-T\-M@{A\-T\-M}!incoming\-\_\-@{incoming\-\_\-}}
+\index{incoming\-\_\-@{incoming\-\_\-}!ATM@{A\-T\-M}}
+\subsubsection[{incoming\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf messaging\-::\-Receiver} A\-T\-M\-::incoming\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classATM_a59b7d4c15875982aef0399de08d1c6c0}
+\hypertarget{classATM_aeffb0e1f17d32a7dcf2f84643390e614}{\index{A\-T\-M@{A\-T\-M}!interface\-\_\-hardware\-\_\-@{interface\-\_\-hardware\-\_\-}}
+\index{interface\-\_\-hardware\-\_\-@{interface\-\_\-hardware\-\_\-}!ATM@{A\-T\-M}}
+\subsubsection[{interface\-\_\-hardware\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf messaging\-::\-Sender} A\-T\-M\-::interface\-\_\-hardware\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classATM_aeffb0e1f17d32a7dcf2f84643390e614}
+\hypertarget{classATM_abf1480605c201cac7d94e0057c372517}{\index{A\-T\-M@{A\-T\-M}!pin\-\_\-@{pin\-\_\-}}
+\index{pin\-\_\-@{pin\-\_\-}!ATM@{A\-T\-M}}
+\subsubsection[{pin\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string A\-T\-M\-::pin\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classATM_abf1480605c201cac7d94e0057c372517}
+\hypertarget{classATM_ad655bcb7436d78fba4b0d16ab9a15ff1}{\index{A\-T\-M@{A\-T\-M}!state\-\_\-@{state\-\_\-}}
+\index{state\-\_\-@{state\-\_\-}!ATM@{A\-T\-M}}
+\subsubsection[{state\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void(A\-T\-M\-::$\ast$ A\-T\-M\-::state\-\_\-)()\hspace{0.3cm}{\ttfamily [private]}}}\label{classATM_ad655bcb7436d78fba4b0d16ab9a15ff1}
+\hypertarget{classATM_a45c2bec3b3f822e15db0304d7ed26529}{\index{A\-T\-M@{A\-T\-M}!withdrawal\-\_\-amount\-\_\-@{withdrawal\-\_\-amount\-\_\-}}
+\index{withdrawal\-\_\-amount\-\_\-@{withdrawal\-\_\-amount\-\_\-}!ATM@{A\-T\-M}}
+\subsubsection[{withdrawal\-\_\-amount\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}unsigned A\-T\-M\-::withdrawal\-\_\-amount\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classATM_a45c2bec3b3f822e15db0304d7ed26529}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/root/\-Public/shack/atm/\hyperlink{atm_8h}{atm.\-h}\end{DoxyCompactItemize}

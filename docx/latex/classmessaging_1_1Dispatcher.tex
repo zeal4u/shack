@@ -1,0 +1,158 @@
+\hypertarget{classmessaging_1_1Dispatcher}{\section{messaging\-:\-:Dispatcher Class Reference}
+\label{classmessaging_1_1Dispatcher}\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}}
+}
+
+
+{\ttfamily \#include $<$dispatcher.\-h$>$}
+
+
+
+Collaboration diagram for messaging\-:\-:Dispatcher\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classmessaging_1_1Dispatcher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmessaging_1_1Dispatcher_a80bdf7cb7e206ccb6709a74b1d015682}{Dispatcher} (\hyperlink{classmessaging_1_1Dispatcher}{Dispatcher} \&\&other)
+\item 
+\hyperlink{classmessaging_1_1Dispatcher_adb867c8b876c901d12154e12406e8ff8}{Dispatcher} (\hyperlink{classmessaging_1_1Queue}{Queue} $\ast$queue)
+\item 
+{\footnotesize template$<$class Message , class Func $>$ }\\\hyperlink{classmessaging_1_1TemplateDispatcher}{Template\-Dispatcher}$<$ \hyperlink{classmessaging_1_1Dispatcher}{Dispatcher}, \\*
+Message, Func $>$ \hyperlink{classmessaging_1_1Dispatcher_a6d9d0bf1da266ca951c7821bc4e84f9f}{Handle} (Func \&\&f)
+\item 
+\hyperlink{classmessaging_1_1Dispatcher_ac17a4675e9a484de43bdf8914ab93d04}{$\sim$\-Dispatcher} () noexcept(false)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmessaging_1_1Dispatcher_a6b50ba4fc04d8971bc9ddb3934c8134a}{Dispatcher} (const \hyperlink{classmessaging_1_1Dispatcher}{Dispatcher} \&)=delete
+\item 
+\hyperlink{classmessaging_1_1Dispatcher}{Dispatcher} \& \hyperlink{classmessaging_1_1Dispatcher_a633a26a5b07d92045164800ba86c01e2}{operator=} (const \hyperlink{classmessaging_1_1Dispatcher}{Dispatcher} \&)=delete
+\item 
+void \hyperlink{classmessaging_1_1Dispatcher_a0318b520773a5c7a144fa8b9e8a0dd61}{Wait\-And\-Dispatch} ()
+\item 
+bool \hyperlink{classmessaging_1_1Dispatcher_a4fe4a8aa09f0f97676eef973cceb0ef5}{Dispatch} (const std\-::shared\-\_\-ptr$<$ \hyperlink{structmessaging_1_1MessageBase}{Message\-Base} $>$ \&msg)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmessaging_1_1Queue}{Queue} $\ast$ \hyperlink{classmessaging_1_1Dispatcher_a877e071792b0e42b46c7d32836de0739}{queue\-\_\-ptr\-\_\-}
+\item 
+bool \hyperlink{classmessaging_1_1Dispatcher_a4db2da2c17f91e2c9b119b60fe4fee0a}{chained\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Dispatcher , class Msg , class Func $>$ }\\class \hyperlink{classmessaging_1_1Dispatcher_ac52eebabf93ac84bc8eacc5c67e6ca9f}{Template\-Dispatcher}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmessaging_1_1Dispatcher_a80bdf7cb7e206ccb6709a74b1d015682}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!Dispatcher@{Dispatcher}}
+\index{Dispatcher@{Dispatcher}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{Dispatcher}]{\setlength{\rightskip}{0pt plus 5cm}messaging\-::\-Dispatcher\-::\-Dispatcher (
+\begin{DoxyParamCaption}
+\item[{{\bf Dispatcher} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmessaging_1_1Dispatcher_a80bdf7cb7e206ccb6709a74b1d015682}
+\hypertarget{classmessaging_1_1Dispatcher_adb867c8b876c901d12154e12406e8ff8}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!Dispatcher@{Dispatcher}}
+\index{Dispatcher@{Dispatcher}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{Dispatcher}]{\setlength{\rightskip}{0pt plus 5cm}messaging\-::\-Dispatcher\-::\-Dispatcher (
+\begin{DoxyParamCaption}
+\item[{{\bf Queue} $\ast$}]{queue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmessaging_1_1Dispatcher_adb867c8b876c901d12154e12406e8ff8}
+\hypertarget{classmessaging_1_1Dispatcher_ac17a4675e9a484de43bdf8914ab93d04}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!$\sim$\-Dispatcher@{$\sim$\-Dispatcher}}
+\index{$\sim$\-Dispatcher@{$\sim$\-Dispatcher}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{$\sim$\-Dispatcher}]{\setlength{\rightskip}{0pt plus 5cm}messaging\-::\-Dispatcher\-::$\sim$\-Dispatcher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classmessaging_1_1Dispatcher_ac17a4675e9a484de43bdf8914ab93d04}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessaging_1_1Dispatcher_ac17a4675e9a484de43bdf8914ab93d04_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmessaging_1_1Dispatcher_a6b50ba4fc04d8971bc9ddb3934c8134a}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!Dispatcher@{Dispatcher}}
+\index{Dispatcher@{Dispatcher}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{Dispatcher}]{\setlength{\rightskip}{0pt plus 5cm}messaging\-::\-Dispatcher\-::\-Dispatcher (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dispatcher} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}}\label{classmessaging_1_1Dispatcher_a6b50ba4fc04d8971bc9ddb3934c8134a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmessaging_1_1Dispatcher_a4fe4a8aa09f0f97676eef973cceb0ef5}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!Dispatch@{Dispatch}}
+\index{Dispatch@{Dispatch}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}bool messaging\-::\-Dispatcher\-::\-Dispatch (
+\begin{DoxyParamCaption}
+\item[{const std\-::shared\-\_\-ptr$<$ {\bf Message\-Base} $>$ \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classmessaging_1_1Dispatcher_a4fe4a8aa09f0f97676eef973cceb0ef5}
+\hypertarget{classmessaging_1_1Dispatcher_a6d9d0bf1da266ca951c7821bc4e84f9f}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!Handle@{Handle}}
+\index{Handle@{Handle}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{Handle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Message , class Func $>$ {\bf Template\-Dispatcher}$<${\bf Dispatcher}, Message, Func$>$ messaging\-::\-Dispatcher\-::\-Handle (
+\begin{DoxyParamCaption}
+\item[{Func \&\&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmessaging_1_1Dispatcher_a6d9d0bf1da266ca951c7821bc4e84f9f}
+\hypertarget{classmessaging_1_1Dispatcher_a633a26a5b07d92045164800ba86c01e2}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!operator=@{operator=}}
+\index{operator=@{operator=}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dispatcher}\& messaging\-::\-Dispatcher\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dispatcher} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}}\label{classmessaging_1_1Dispatcher_a633a26a5b07d92045164800ba86c01e2}
+\hypertarget{classmessaging_1_1Dispatcher_a0318b520773a5c7a144fa8b9e8a0dd61}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!Wait\-And\-Dispatch@{Wait\-And\-Dispatch}}
+\index{Wait\-And\-Dispatch@{Wait\-And\-Dispatch}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{Wait\-And\-Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}void messaging\-::\-Dispatcher\-::\-Wait\-And\-Dispatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classmessaging_1_1Dispatcher_a0318b520773a5c7a144fa8b9e8a0dd61}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessaging_1_1Dispatcher_a0318b520773a5c7a144fa8b9e8a0dd61_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmessaging_1_1Dispatcher_ac52eebabf93ac84bc8eacc5c67e6ca9f}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!Template\-Dispatcher@{Template\-Dispatcher}}
+\index{Template\-Dispatcher@{Template\-Dispatcher}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{Template\-Dispatcher}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Dispatcher , class Msg , class Func $>$ friend class {\bf Template\-Dispatcher}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classmessaging_1_1Dispatcher_ac52eebabf93ac84bc8eacc5c67e6ca9f}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmessaging_1_1Dispatcher_a4db2da2c17f91e2c9b119b60fe4fee0a}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!chained\-\_\-@{chained\-\_\-}}
+\index{chained\-\_\-@{chained\-\_\-}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{chained\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}bool messaging\-::\-Dispatcher\-::chained\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classmessaging_1_1Dispatcher_a4db2da2c17f91e2c9b119b60fe4fee0a}
+\hypertarget{classmessaging_1_1Dispatcher_a877e071792b0e42b46c7d32836de0739}{\index{messaging\-::\-Dispatcher@{messaging\-::\-Dispatcher}!queue\-\_\-ptr\-\_\-@{queue\-\_\-ptr\-\_\-}}
+\index{queue\-\_\-ptr\-\_\-@{queue\-\_\-ptr\-\_\-}!messaging::Dispatcher@{messaging\-::\-Dispatcher}}
+\subsubsection[{queue\-\_\-ptr\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Queue}$\ast$ messaging\-::\-Dispatcher\-::queue\-\_\-ptr\-\_\-\hspace{0.3cm}{\ttfamily [private]}}}\label{classmessaging_1_1Dispatcher_a877e071792b0e42b46c7d32836de0739}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/root/\-Public/shack/atm/\hyperlink{dispatcher_8h}{dispatcher.\-h}\end{DoxyCompactItemize}

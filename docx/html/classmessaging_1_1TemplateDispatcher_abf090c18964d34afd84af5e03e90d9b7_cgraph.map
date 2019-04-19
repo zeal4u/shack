@@ -1,0 +1,5 @@
+<map id="messaging::TemplateDispatcher::~TemplateDispatcher" name="messaging::TemplateDispatcher::~TemplateDispatcher">
+<area shape="rect" id="node2" href="$classmessaging_1_1TemplateDispatcher.html#ab36064e19b91ff2ea8f37034b8de7f60" title="messaging::TemplateDispatcher\l::WaitAndDispatch" alt="" coords="264,27,475,69"/>
+<area shape="rect" id="node3" href="$classmessaging_1_1Queue.html#a624adbac8b7f4b5ebf6bb0f9ab76bcc3" title="messaging::Queue::WaitAndPop" alt="" coords="523,5,735,32"/>
+<area shape="rect" id="node4" href="$classmessaging_1_1TemplateDispatcher.html#a0e8673cb9d39a44f0a8332885efbde8d" title="messaging::TemplateDispatcher\l::Dispatch" alt="" coords="524,57,735,98"/>
+</map>

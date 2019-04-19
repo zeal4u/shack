@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classATM" kind="class" prot="public">
+    <compoundname>ATM</compoundname>
+    <includes refid="atm_8h" local="no">atm.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classATM_1a59b7d4c15875982aef0399de08d1c6c0" prot="private" static="no" mutable="no">
+        <type><ref refid="classmessaging_1_1Receiver" kindref="compound">messaging::Receiver</ref></type>
+        <definition>messaging::Receiver ATM::incoming_</definition>
+        <argsstring></argsstring>
+        <name>incoming_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="41" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classATM_1ad4f43517a9785b318afb336355672efe" prot="private" static="no" mutable="no">
+        <type><ref refid="classmessaging_1_1Sender" kindref="compound">messaging::Sender</ref></type>
+        <definition>messaging::Sender ATM::bank_</definition>
+        <argsstring></argsstring>
+        <name>bank_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="42" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classATM_1aeffb0e1f17d32a7dcf2f84643390e614" prot="private" static="no" mutable="no">
+        <type><ref refid="classmessaging_1_1Sender" kindref="compound">messaging::Sender</ref></type>
+        <definition>messaging::Sender ATM::interface_hardware_</definition>
+        <argsstring></argsstring>
+        <name>interface_hardware_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="43" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1" prot="private" static="no" mutable="no">
+        <type>void(ATM::*</type>
+        <definition>void(ATM::* ATM::state_)()</definition>
+        <argsstring>)()</argsstring>
+        <name>state_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="44" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classATM_1a25cd6fda12c3a95144d820de539adee6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ATM::account_</definition>
+        <argsstring></argsstring>
+        <name>account_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="45" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classATM_1a45c2bec3b3f822e15db0304d7ed26529" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned ATM::withdrawal_amount_</definition>
+        <argsstring></argsstring>
+        <name>withdrawal_amount_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="46" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classATM_1abf1480605c201cac7d94e0057c372517" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ATM::pin_</definition>
+        <argsstring></argsstring>
+        <name>pin_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="47" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classATM_1a8e0ede939f35c0a2818fdeda39ff586b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ATM::ATM</definition>
+        <argsstring>(messaging::Sender bank, messaging::Sender interface_hardware)</argsstring>
+        <name>ATM</name>
+        <param>
+          <type><ref refid="classmessaging_1_1Sender" kindref="compound">messaging::Sender</ref></type>
+          <declname>bank</declname>
+        </param>
+        <param>
+          <type><ref refid="classmessaging_1_1Sender" kindref="compound">messaging::Sender</ref></type>
+          <declname>interface_hardware</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="18" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classATM_1add4ca9f2b7c6ab6e0cb81cbcb925069e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATM::Done</definition>
+        <argsstring>()</argsstring>
+        <name>Done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="22" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="22" bodyend="24"/>
+        <references refid="classATM_1a2aa23e220496bdd41d651151a1cc97e6" compoundref="atm_8h" startline="37" endline="39">GetSender</references>
+        <references refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" compoundref="sender_8h" startline="20" endline="24">messaging::Sender::Send</references>
+      </memberdef>
+      <memberdef kind="function" id="classATM_1a03fb6655e150b1381a8aa595e4403d06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATM::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="26" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="26" bodyend="35"/>
+        <references refid="classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1" compoundref="atm_8h" startline="44">state_</references>
+        <references refid="classATM_1ae530dbaa0e091b13f919542d002ef216" compoundref="atm_8h" startline="143" endline="153">WaitForCard</references>
+      </memberdef>
+      <memberdef kind="function" id="classATM_1a2aa23e220496bdd41d651151a1cc97e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmessaging_1_1Sender" kindref="compound">messaging::Sender</ref></type>
+        <definition>messaging::Sender ATM::GetSender</definition>
+        <argsstring>()</argsstring>
+        <name>GetSender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="37" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="37" bodyend="39"/>
+        <references refid="classATM_1a59b7d4c15875982aef0399de08d1c6c0" compoundref="atm_8h" startline="41">incoming_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classATM_1aa8ee553ff388f9977f1a504fed5eb946" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATM::ProcessWithdrawal</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessWithdrawal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="49" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="49" bodyend="68"/>
+        <references refid="classATM_1a59b7d4c15875982aef0399de08d1c6c0" compoundref="atm_8h" startline="41">incoming_</references>
+        <references refid="classmessaging_1_1Receiver_1a3f0e7b541159793eaec1e0fa6802d4d2" compoundref="receiver_8h" startline="23" endline="25">messaging::Receiver::Wait</references>
+        <references refid="classmessaging_1_1Dispatcher_1a6d9d0bf1da266ca951c7821bc4e84f9f" compoundref="dispatcher_8h" startline="27" endline="29">messaging::Dispatcher::Handle</references>
+        <references refid="classATM_1aeffb0e1f17d32a7dcf2f84643390e614" compoundref="atm_8h" startline="43">interface_hardware_</references>
+        <references refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" compoundref="sender_8h" startline="20" endline="24">messaging::Sender::Send</references>
+        <references refid="classATM_1a45c2bec3b3f822e15db0304d7ed26529" compoundref="atm_8h" startline="46">withdrawal_amount_</references>
+        <references refid="classATM_1ad4f43517a9785b318afb336355672efe" compoundref="atm_8h" startline="42">bank_</references>
+        <references refid="classATM_1a25cd6fda12c3a95144d820de539adee6" compoundref="atm_8h" startline="45">account_</references>
+        <references refid="classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1" compoundref="atm_8h" startline="44">state_</references>
+        <references refid="classATM_1accef2f77884d7272e7fe3cdfc210ba35" compoundref="atm_8h" startline="154" endline="157">DoneProcessing</references>
+      </memberdef>
+      <memberdef kind="function" id="classATM_1a4adb797522de2abb66dadd033f11a8f7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATM::ProcessBalance</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessBalance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="70" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="70" bodyend="81"/>
+        <references refid="classATM_1a59b7d4c15875982aef0399de08d1c6c0" compoundref="atm_8h" startline="41">incoming_</references>
+        <references refid="classmessaging_1_1Receiver_1a3f0e7b541159793eaec1e0fa6802d4d2" compoundref="receiver_8h" startline="23" endline="25">messaging::Receiver::Wait</references>
+        <references refid="classmessaging_1_1Dispatcher_1a6d9d0bf1da266ca951c7821bc4e84f9f" compoundref="dispatcher_8h" startline="27" endline="29">messaging::Dispatcher::Handle</references>
+        <references refid="classATM_1aeffb0e1f17d32a7dcf2f84643390e614" compoundref="atm_8h" startline="43">interface_hardware_</references>
+        <references refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" compoundref="sender_8h" startline="20" endline="24">messaging::Sender::Send</references>
+        <references refid="classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1" compoundref="atm_8h" startline="44">state_</references>
+        <references refid="classATM_1adb4a5188bec74d4cd199acdd6e62941d" compoundref="atm_8h" startline="83" endline="101">WaitForAction</references>
+        <references refid="classATM_1accef2f77884d7272e7fe3cdfc210ba35" compoundref="atm_8h" startline="154" endline="157">DoneProcessing</references>
+      </memberdef>
+      <memberdef kind="function" id="classATM_1adb4a5188bec74d4cd199acdd6e62941d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATM::WaitForAction</definition>
+        <argsstring>()</argsstring>
+        <name>WaitForAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="83" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="83" bodyend="101"/>
+        <references refid="classATM_1aeffb0e1f17d32a7dcf2f84643390e614" compoundref="atm_8h" startline="43">interface_hardware_</references>
+        <references refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" compoundref="sender_8h" startline="20" endline="24">messaging::Sender::Send</references>
+        <references refid="classATM_1a59b7d4c15875982aef0399de08d1c6c0" compoundref="atm_8h" startline="41">incoming_</references>
+        <references refid="classmessaging_1_1Receiver_1a3f0e7b541159793eaec1e0fa6802d4d2" compoundref="receiver_8h" startline="23" endline="25">messaging::Receiver::Wait</references>
+        <references refid="classmessaging_1_1Dispatcher_1a6d9d0bf1da266ca951c7821bc4e84f9f" compoundref="dispatcher_8h" startline="27" endline="29">messaging::Dispatcher::Handle</references>
+        <references refid="classATM_1a45c2bec3b3f822e15db0304d7ed26529" compoundref="atm_8h" startline="46">withdrawal_amount_</references>
+        <references refid="classATM_1ad4f43517a9785b318afb336355672efe" compoundref="atm_8h" startline="42">bank_</references>
+        <references refid="classATM_1a25cd6fda12c3a95144d820de539adee6" compoundref="atm_8h" startline="45">account_</references>
+        <references refid="classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1" compoundref="atm_8h" startline="44">state_</references>
+        <references refid="classATM_1aa8ee553ff388f9977f1a504fed5eb946" compoundref="atm_8h" startline="49" endline="68">ProcessWithdrawal</references>
+        <references refid="classATM_1a4adb797522de2abb66dadd033f11a8f7" compoundref="atm_8h" startline="70" endline="81">ProcessBalance</references>
+        <references refid="classATM_1accef2f77884d7272e7fe3cdfc210ba35" compoundref="atm_8h" startline="154" endline="157">DoneProcessing</references>
+      </memberdef>
+      <memberdef kind="function" id="classATM_1a1378674f5e175c6f99cccb8b848e3512" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATM::VerifyingPin</definition>
+        <argsstring>()</argsstring>
+        <name>VerifyingPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="103" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="103" bodyend="118"/>
+        <references refid="classATM_1a59b7d4c15875982aef0399de08d1c6c0" compoundref="atm_8h" startline="41">incoming_</references>
+        <references refid="classmessaging_1_1Receiver_1a3f0e7b541159793eaec1e0fa6802d4d2" compoundref="receiver_8h" startline="23" endline="25">messaging::Receiver::Wait</references>
+        <references refid="classmessaging_1_1Dispatcher_1a6d9d0bf1da266ca951c7821bc4e84f9f" compoundref="dispatcher_8h" startline="27" endline="29">messaging::Dispatcher::Handle</references>
+        <references refid="classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1" compoundref="atm_8h" startline="44">state_</references>
+        <references refid="classATM_1adb4a5188bec74d4cd199acdd6e62941d" compoundref="atm_8h" startline="83" endline="101">WaitForAction</references>
+        <references refid="classATM_1aeffb0e1f17d32a7dcf2f84643390e614" compoundref="atm_8h" startline="43">interface_hardware_</references>
+        <references refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" compoundref="sender_8h" startline="20" endline="24">messaging::Sender::Send</references>
+        <references refid="classATM_1accef2f77884d7272e7fe3cdfc210ba35" compoundref="atm_8h" startline="154" endline="157">DoneProcessing</references>
+      </memberdef>
+      <memberdef kind="function" id="classATM_1a2a182a5996cbed4122a9c1afd2f1697a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATM::GettingPin</definition>
+        <argsstring>()</argsstring>
+        <name>GettingPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="120" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="120" bodyend="141"/>
+        <references refid="classATM_1a59b7d4c15875982aef0399de08d1c6c0" compoundref="atm_8h" startline="41">incoming_</references>
+        <references refid="classmessaging_1_1Receiver_1a3f0e7b541159793eaec1e0fa6802d4d2" compoundref="receiver_8h" startline="23" endline="25">messaging::Receiver::Wait</references>
+        <references refid="classmessaging_1_1Dispatcher_1a6d9d0bf1da266ca951c7821bc4e84f9f" compoundref="dispatcher_8h" startline="27" endline="29">messaging::Dispatcher::Handle</references>
+        <references refid="classATM_1abf1480605c201cac7d94e0057c372517" compoundref="atm_8h" startline="47">pin_</references>
+        <references refid="classATM_1ad4f43517a9785b318afb336355672efe" compoundref="atm_8h" startline="42">bank_</references>
+        <references refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" compoundref="sender_8h" startline="20" endline="24">messaging::Sender::Send</references>
+        <references refid="classATM_1a25cd6fda12c3a95144d820de539adee6" compoundref="atm_8h" startline="45">account_</references>
+        <references refid="classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1" compoundref="atm_8h" startline="44">state_</references>
+        <references refid="classATM_1a1378674f5e175c6f99cccb8b848e3512" compoundref="atm_8h" startline="103" endline="118">VerifyingPin</references>
+        <references refid="classATM_1accef2f77884d7272e7fe3cdfc210ba35" compoundref="atm_8h" startline="154" endline="157">DoneProcessing</references>
+      </memberdef>
+      <memberdef kind="function" id="classATM_1ae530dbaa0e091b13f919542d002ef216" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATM::WaitForCard</definition>
+        <argsstring>()</argsstring>
+        <name>WaitForCard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="143" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="143" bodyend="153"/>
+        <references refid="classATM_1aeffb0e1f17d32a7dcf2f84643390e614" compoundref="atm_8h" startline="43">interface_hardware_</references>
+        <references refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" compoundref="sender_8h" startline="20" endline="24">messaging::Sender::Send</references>
+        <references refid="classATM_1a59b7d4c15875982aef0399de08d1c6c0" compoundref="atm_8h" startline="41">incoming_</references>
+        <references refid="classmessaging_1_1Receiver_1a3f0e7b541159793eaec1e0fa6802d4d2" compoundref="receiver_8h" startline="23" endline="25">messaging::Receiver::Wait</references>
+        <references refid="classmessaging_1_1Dispatcher_1a6d9d0bf1da266ca951c7821bc4e84f9f" compoundref="dispatcher_8h" startline="27" endline="29">messaging::Dispatcher::Handle</references>
+        <references refid="classATM_1a25cd6fda12c3a95144d820de539adee6" compoundref="atm_8h" startline="45">account_</references>
+        <references refid="classATM_1abf1480605c201cac7d94e0057c372517" compoundref="atm_8h" startline="47">pin_</references>
+        <references refid="classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1" compoundref="atm_8h" startline="44">state_</references>
+        <references refid="classATM_1a2a182a5996cbed4122a9c1afd2f1697a" compoundref="atm_8h" startline="120" endline="141">GettingPin</references>
+      </memberdef>
+      <memberdef kind="function" id="classATM_1accef2f77884d7272e7fe3cdfc210ba35" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ATM::DoneProcessing</definition>
+        <argsstring>()</argsstring>
+        <name>DoneProcessing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/atm.h" line="154" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="154" bodyend="157"/>
+        <references refid="classATM_1aeffb0e1f17d32a7dcf2f84643390e614" compoundref="atm_8h" startline="43">interface_hardware_</references>
+        <references refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" compoundref="sender_8h" startline="20" endline="24">messaging::Sender::Send</references>
+        <references refid="classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1" compoundref="atm_8h" startline="44">state_</references>
+        <references refid="classATM_1ae530dbaa0e091b13f919542d002ef216" compoundref="atm_8h" startline="143" endline="153">WaitForCard</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="94">
+        <label>messaging::Sender</label>
+        <link refid="classmessaging_1_1Sender"/>
+        <childnode refid="95" relation="usage">
+          <edgelabel>queue_ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="95">
+        <label>messaging::Queue</label>
+        <link refid="classmessaging_1_1Queue"/>
+      </node>
+      <node id="96">
+        <label>messaging::Receiver</label>
+        <link refid="classmessaging_1_1Receiver"/>
+        <childnode refid="95" relation="usage">
+          <edgelabel>queue_</edgelabel>
+        </childnode>
+      </node>
+      <node id="93">
+        <label>ATM</label>
+        <link refid="classATM"/>
+        <childnode refid="94" relation="usage">
+          <edgelabel>interface_hardware_</edgelabel>
+          <edgelabel>bank_</edgelabel>
+        </childnode>
+        <childnode refid="96" relation="usage">
+          <edgelabel>incoming_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/root/Public/shack/atm/atm.h" line="16" column="1" bodyfile="/root/Public/shack/atm/atm.h" bodystart="16" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classATM_1a25cd6fda12c3a95144d820de539adee6" prot="private" virt="non-virtual"><scope>ATM</scope><name>account_</name></member>
+      <member refid="classATM_1a8e0ede939f35c0a2818fdeda39ff586b" prot="public" virt="non-virtual"><scope>ATM</scope><name>ATM</name></member>
+      <member refid="classATM_1ad4f43517a9785b318afb336355672efe" prot="private" virt="non-virtual"><scope>ATM</scope><name>bank_</name></member>
+      <member refid="classATM_1add4ca9f2b7c6ab6e0cb81cbcb925069e" prot="public" virt="non-virtual"><scope>ATM</scope><name>Done</name></member>
+      <member refid="classATM_1accef2f77884d7272e7fe3cdfc210ba35" prot="private" virt="non-virtual"><scope>ATM</scope><name>DoneProcessing</name></member>
+      <member refid="classATM_1a2aa23e220496bdd41d651151a1cc97e6" prot="public" virt="non-virtual"><scope>ATM</scope><name>GetSender</name></member>
+      <member refid="classATM_1a2a182a5996cbed4122a9c1afd2f1697a" prot="private" virt="non-virtual"><scope>ATM</scope><name>GettingPin</name></member>
+      <member refid="classATM_1a59b7d4c15875982aef0399de08d1c6c0" prot="private" virt="non-virtual"><scope>ATM</scope><name>incoming_</name></member>
+      <member refid="classATM_1aeffb0e1f17d32a7dcf2f84643390e614" prot="private" virt="non-virtual"><scope>ATM</scope><name>interface_hardware_</name></member>
+      <member refid="classATM_1abf1480605c201cac7d94e0057c372517" prot="private" virt="non-virtual"><scope>ATM</scope><name>pin_</name></member>
+      <member refid="classATM_1a4adb797522de2abb66dadd033f11a8f7" prot="private" virt="non-virtual"><scope>ATM</scope><name>ProcessBalance</name></member>
+      <member refid="classATM_1aa8ee553ff388f9977f1a504fed5eb946" prot="private" virt="non-virtual"><scope>ATM</scope><name>ProcessWithdrawal</name></member>
+      <member refid="classATM_1a03fb6655e150b1381a8aa595e4403d06" prot="public" virt="non-virtual"><scope>ATM</scope><name>Run</name></member>
+      <member refid="classATM_1ad655bcb7436d78fba4b0d16ab9a15ff1" prot="private" virt="non-virtual"><scope>ATM</scope><name>state_</name></member>
+      <member refid="classATM_1a1378674f5e175c6f99cccb8b848e3512" prot="private" virt="non-virtual"><scope>ATM</scope><name>VerifyingPin</name></member>
+      <member refid="classATM_1adb4a5188bec74d4cd199acdd6e62941d" prot="private" virt="non-virtual"><scope>ATM</scope><name>WaitForAction</name></member>
+      <member refid="classATM_1ae530dbaa0e091b13f919542d002ef216" prot="private" virt="non-virtual"><scope>ATM</scope><name>WaitForCard</name></member>
+      <member refid="classATM_1a45c2bec3b3f822e15db0304d7ed26529" prot="private" virt="non-virtual"><scope>ATM</scope><name>withdrawal_amount_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -7,6 +7,7 @@ class ListNode {
  public:
   int val;
   ListNode* next;
+  ListNode(): val(0), next(nullptr) {} 
 
   static ListNode* BuildList(const std::vector<int>& nums);
  

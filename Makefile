@@ -1,4 +1,4 @@
-XX = clang++ 
+XX = g++
 CPP_FLAGS = -std=c++11 -ggdb3 -fPIC
 SHARED_FLAGS = -fPIC -shared 
 LINK = ln -sf
@@ -16,8 +16,9 @@ SORT_TARGET = sort
 MULTI_THREAD_TARGET = multi
 MESS_TARGET = mess
 TEST_SAFE = test
+ATM = atm
 
-all: COMMON $(SORT_TARGET)_d $(MULTI_THREAD_TARGET)_d $(MULTI_THREAD_TARGET)_d $(MESS_TARGET)_d
+all: COMMON $(SORT_TARGET)_d $(MULTI_THREAD_TARGET)_d $(TEST_SAFE)_d $(MESS_TARGET)_d $(ATM)_d
 
 .PHONY: COMMON
 COMMON:
@@ -55,7 +56,21 @@ $(TEST_SAFE)_d: COMMON
 $(TEST_SAFE): COMMON
 	@make -C test_safe
 
+.PHONY: $(ATM)_d
+$(ATM)_d: COMMON
+	@make -C atm DYNAMIC
+
+.PHONY: $(ATM)
+$(ATM): COMMON
+	@make -C atm
+
 .PHONY: clean
 clean :
 	@rm -rf $(LIBS_DIR)/*
-	@find -name '*.o' -o -name '*.a' -o -name '*.so' -o -name '$(SORT_TARGET)' | xargs rm -rf  
+	@find -name '*.o' -o -name '*.a' -o -name '*.so' -o -name '*.out' -o -name '$(SORT_TARGET)' | xargs rm -rf  
+	@make -C mess clean
+	@make -C test_safe clean
+	@make -C multi_thread clean
+	@make -C atm clean
+	@make -C common clean
+	@make -C sort_algorithm clean

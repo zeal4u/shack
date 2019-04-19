@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structmessaging_1_1WrappedMessage" kind="struct" prot="public">
+    <compoundname>messaging::WrappedMessage</compoundname>
+    <basecompoundref refid="structmessaging_1_1MessageBase" prot="public" virt="non-virtual">messaging::MessageBase</basecompoundref>
+    <includes refid="queue_8h" local="no">queue.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class Msg</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmessaging_1_1WrappedMessage_1a7bd8849ddcc85328985384636caa7199" prot="public" static="no" mutable="no">
+        <type>Msg</type>
+        <definition>Msg messaging::WrappedMessage&lt; Msg &gt;::contents_</definition>
+        <argsstring></argsstring>
+        <name>contents_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/queue.h" line="23" column="1" bodyfile="/root/Public/shack/atm/queue.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmessaging_1_1WrappedMessage_1a1c4326bb674fcb8c82e77554618d4c46" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>messaging::WrappedMessage&lt; Msg &gt;::WrappedMessage</definition>
+        <argsstring>(const Msg &amp;contents)</argsstring>
+        <name>WrappedMessage</name>
+        <param>
+          <type>const Msg &amp;</type>
+          <declname>contents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/queue.h" line="24" column="1" bodyfile="/root/Public/shack/atm/queue.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="181">
+        <label>messaging::MessageBase</label>
+        <link refid="structmessaging_1_1MessageBase"/>
+      </node>
+      <node id="180">
+        <label>messaging::WrappedMessage&lt; Msg &gt;</label>
+        <link refid="structmessaging_1_1WrappedMessage"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="183">
+        <label>messaging::MessageBase</label>
+        <link refid="structmessaging_1_1MessageBase"/>
+      </node>
+      <node id="182">
+        <label>messaging::WrappedMessage&lt; Msg &gt;</label>
+        <link refid="structmessaging_1_1WrappedMessage"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/root/Public/shack/atm/queue.h" line="22" column="1" bodyfile="/root/Public/shack/atm/queue.h" bodystart="22" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structmessaging_1_1WrappedMessage_1a7bd8849ddcc85328985384636caa7199" prot="public" virt="non-virtual"><scope>messaging::WrappedMessage</scope><name>contents_</name></member>
+      <member refid="structmessaging_1_1WrappedMessage_1a1c4326bb674fcb8c82e77554618d4c46" prot="public" virt="non-virtual"><scope>messaging::WrappedMessage</scope><name>WrappedMessage</name></member>
+      <member refid="structmessaging_1_1MessageBase_1afe3211ee077797d75b5a6c549e2aff5f" prot="public" virt="virtual"><scope>messaging::WrappedMessage</scope><name>~MessageBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

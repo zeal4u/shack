@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classBankMachine" kind="class" prot="public">
+    <compoundname>BankMachine</compoundname>
+    <includes refid="bank__machine_8h" local="no">bank_machine.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBankMachine_1a80fe063f235cf02d33a2d70aeef6048c" prot="private" static="no" mutable="no">
+        <type><ref refid="classmessaging_1_1Receiver" kindref="compound">messaging::Receiver</ref></type>
+        <definition>messaging::Receiver BankMachine::incoming_</definition>
+        <argsstring></argsstring>
+        <name>incoming_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/bank_machine.h" line="59" column="1" bodyfile="/root/Public/shack/atm/bank_machine.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBankMachine_1ad299fdb18b1ee6e66374f70dde18d584" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned BankMachine::balance_</definition>
+        <argsstring></argsstring>
+        <name>balance_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/bank_machine.h" line="60" column="1" bodyfile="/root/Public/shack/atm/bank_machine.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBankMachine_1aafdb9bf4f04bec9c6ac3b9ec2229843e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BankMachine::BankMachine</definition>
+        <argsstring>()</argsstring>
+        <name>BankMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/bank_machine.h" line="16" column="1" bodyfile="/root/Public/shack/atm/bank_machine.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classBankMachine_1afaf799b68e5965bb473cee993fffee74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BankMachine::Done</definition>
+        <argsstring>()</argsstring>
+        <name>Done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/bank_machine.h" line="18" column="1" bodyfile="/root/Public/shack/atm/bank_machine.h" bodystart="18" bodyend="20"/>
+        <references refid="classBankMachine_1a5d8bf0c5b153073a6bfa76bd2ee29acb" compoundref="bank__machine_8h" startline="55" endline="57">GetSender</references>
+        <references refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" compoundref="sender_8h" startline="20" endline="24">messaging::Sender::Send</references>
+      </memberdef>
+      <memberdef kind="function" id="classBankMachine_1adba1d635c9837305c1e0fe4f70efdcdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BankMachine::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/bank_machine.h" line="22" column="1" bodyfile="/root/Public/shack/atm/bank_machine.h" bodystart="22" bodyend="53"/>
+        <references refid="classBankMachine_1a80fe063f235cf02d33a2d70aeef6048c" compoundref="bank__machine_8h" startline="59">incoming_</references>
+        <references refid="classmessaging_1_1Receiver_1a3f0e7b541159793eaec1e0fa6802d4d2" compoundref="receiver_8h" startline="23" endline="25">messaging::Receiver::Wait</references>
+        <references refid="classmessaging_1_1Dispatcher_1a6d9d0bf1da266ca951c7821bc4e84f9f" compoundref="dispatcher_8h" startline="27" endline="29">messaging::Dispatcher::Handle</references>
+        <references refid="classBankMachine_1ad299fdb18b1ee6e66374f70dde18d584" compoundref="bank__machine_8h" startline="60">balance_</references>
+        <references refid="structWithdraw_1aef16f3caa8a813007062a23d06ee4297" compoundref="withdraw_8h" startline="16">Withdraw::amount_</references>
+        <references refid="structWithdraw_1ab629acf79446ce7dd973ed3c97c1c99c" compoundref="withdraw_8h" startline="17">Withdraw::atm_queue_</references>
+        <references refid="classmessaging_1_1Sender_1a5f8d8f2fa560996d8f224cc0f10d8f8c" compoundref="sender_8h" startline="20" endline="24">messaging::Sender::Send</references>
+        <references refid="structGetBalance_1a469a494592b15655be79bc85c7202750" compoundref="withdraw_8h" startline="92">GetBalance::atm_queue_</references>
+      </memberdef>
+      <memberdef kind="function" id="classBankMachine_1a5d8bf0c5b153073a6bfa76bd2ee29acb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmessaging_1_1Sender" kindref="compound">messaging::Sender</ref></type>
+        <definition>messaging::Sender BankMachine::GetSender</definition>
+        <argsstring>()</argsstring>
+        <name>GetSender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/bank_machine.h" line="55" column="1" bodyfile="/root/Public/shack/atm/bank_machine.h" bodystart="55" bodyend="57"/>
+        <references refid="classBankMachine_1a80fe063f235cf02d33a2d70aeef6048c" compoundref="bank__machine_8h" startline="59">incoming_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="104">
+        <label>messaging::Queue</label>
+        <link refid="classmessaging_1_1Queue"/>
+      </node>
+      <node id="103">
+        <label>messaging::Receiver</label>
+        <link refid="classmessaging_1_1Receiver"/>
+        <childnode refid="104" relation="usage">
+          <edgelabel>queue_</edgelabel>
+        </childnode>
+      </node>
+      <node id="102">
+        <label>BankMachine</label>
+        <link refid="classBankMachine"/>
+        <childnode refid="103" relation="usage">
+          <edgelabel>incoming_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/root/Public/shack/atm/bank_machine.h" line="14" column="1" bodyfile="/root/Public/shack/atm/bank_machine.h" bodystart="14" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classBankMachine_1ad299fdb18b1ee6e66374f70dde18d584" prot="private" virt="non-virtual"><scope>BankMachine</scope><name>balance_</name></member>
+      <member refid="classBankMachine_1aafdb9bf4f04bec9c6ac3b9ec2229843e" prot="public" virt="non-virtual"><scope>BankMachine</scope><name>BankMachine</name></member>
+      <member refid="classBankMachine_1afaf799b68e5965bb473cee993fffee74" prot="public" virt="non-virtual"><scope>BankMachine</scope><name>Done</name></member>
+      <member refid="classBankMachine_1a5d8bf0c5b153073a6bfa76bd2ee29acb" prot="public" virt="non-virtual"><scope>BankMachine</scope><name>GetSender</name></member>
+      <member refid="classBankMachine_1a80fe063f235cf02d33a2d70aeef6048c" prot="private" virt="non-virtual"><scope>BankMachine</scope><name>incoming_</name></member>
+      <member refid="classBankMachine_1adba1d635c9837305c1e0fe4f70efdcdb" prot="public" virt="non-virtual"><scope>BankMachine</scope><name>Run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <atomic>
+#include <chrono>
+#include <thread>
+
+#include "parallel_accumulate.h"
+#include "count_down.h"
 
 int critical_value = 0;
 std::atomic<int> atomic_value(0);
@@ -26,9 +31,9 @@ void* atomic_add(void* _)
   return nullptr;
 }
 
-int main(int argc, char* argv[])
+void test_multi_add(int argc, char* argv[])
 {
-  if (argc != 2) return 0;
+  if (argc != 2) return;
   int i = 10;
   pthread_t thread[i];
   pthread_mutex_t mutex;
@@ -52,5 +57,50 @@ int main(int argc, char* argv[])
   }
  
   printf("Finally the value is %d\n", (critical_value != 0 ? critical_value: std::atomic_load(&atomic_value)));
+}
+
+void test_parallel_accumulate()
+{
+  std::vector<int> test_data = {1,2,3,4};
+  auto start = std::chrono::high_resolution_clock::now();
+  int result = parallel_accumulate(test_data.begin(), test_data.end(), 0);
+  auto end = std::chrono::high_resolution_clock::now();
+  std::chrono::duration<double> diff = end - start;
+  printf("Parallel accumulate result is %d, cost %f s\n", result, diff.count());
+
+
+  start = std::chrono::high_resolution_clock::now();
+  result = accumulate(test_data.begin(), test_data.end(), 0);
+  end = std::chrono::high_resolution_clock::now();
+  diff = end - start;
+  printf("Correct accumulate result is %d, cost %f s\n", result, diff.count());
+}
+
+int normal_int = 0;
+
+void LatchAdd(CountDown *cd) {
+  cd->Wait();
+  ++normal_int;
+  printf("%d", normal_int);
+}
+
+void test_latchadd() {
+  normal_int = 0;
+  CountDown cd(2);
+  std::thread thread1(LatchAdd, &cd);
+  cd.GoForIt();
+  std::thread thread2(LatchAdd, &cd);
+  cd.GoForIt();
+  thread1.join();
+  thread2.join();
+  printf("\n");
+}
+
+int main(int argc, char *argv[])
+{
+  int times = 100000;
+  while (times--) {
+    test_latchadd();
+  }
   return 0;
 }

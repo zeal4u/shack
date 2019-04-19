@@ -6,14 +6,14 @@ TARGET_BIN = sort_main
 all:$(TARGET_BIN)
 
 $(OBJ_UNIT):%.o:%.cpp
-	$(XX) $(CPP_FLAGS) -c $< -o $@
+	$(XX) $(CPP_FLAGS) -c $< -o $@ $(INCLUDE)
 
 $(TARGET_BIN): $(OBJ_UNIT)
-	$(XX) $(OBJ_UNIT) -o $(TARGET_BIN) -l:libcommon.a -L$(LIBS_DIR) 
+	$(XX) $(CPP_FLAGS) $(INCLUDE) $(OBJ_UNIT) -o $(TARGET_BIN) -lpthread -l:libcommon.a -L$(LIBS_DIR) 
 
 .PHONY: DYNAMIC
 DYNAMIC:$(OBJ_UNIT)
-	$(XX) $(OBJ_UNIT) -o $(TARGET_BIN) -lcommon -L$(LIBS_DIR) 
+	$(XX) $(CPP_FLAGS) $(INCLUDE) $(OBJ_UNIT) -o $(TARGET_BIN) -lpthread -lcommon -L$(LIBS_DIR) 
 
 .PHONY: clean
 clean :

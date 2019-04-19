@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespacemessaging" kind="namespace">
+    <compoundname>messaging</compoundname>
+    <innerclass refid="classmessaging_1_1CloseQueue" prot="public">messaging::CloseQueue</innerclass>
+    <innerclass refid="classmessaging_1_1Dispatcher" prot="public">messaging::Dispatcher</innerclass>
+    <innerclass refid="structmessaging_1_1MessageBase" prot="public">messaging::MessageBase</innerclass>
+    <innerclass refid="structmessaging_1_1WrappedMessage" prot="public">messaging::WrappedMessage</innerclass>
+    <innerclass refid="classmessaging_1_1Queue" prot="public">messaging::Queue</innerclass>
+    <innerclass refid="classmessaging_1_1Receiver" prot="public">messaging::Receiver</innerclass>
+    <innerclass refid="classmessaging_1_1Sender" prot="public">messaging::Sender</innerclass>
+    <innerclass refid="classmessaging_1_1TemplateDispatcher" prot="public">messaging::TemplateDispatcher</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/root/Public/shack/atm/dispatcher.h" line="14" column="1"/>
+  </compounddef>
+</doxygen>

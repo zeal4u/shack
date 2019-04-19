@@ -189,7 +189,7 @@ Window UnblockingSafeSet::find(MarkedNode* head, int key)
         if (snip) {
           cur = succ;
           succ = cur->next.get(marked);
-        }
+        } else break;
       }
       if (snip) {
         if (cur->key >= key)  return Window(pre, cur);

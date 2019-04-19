@@ -33,7 +33,7 @@ main(int argc, char *argv[])
     hints.ai_addr = NULL;
     hints.ai_next = NULL;
 
-    s = getaddrinfo(NULL, argv[1], &hints, &result);
+    s = getaddrinfo(NULL, arv[1], &hints, &result);
     if (s != 0) {
         fprintf(stderr, "getaddrinfo: %s\n", gai_strerror(s));
         exit(EXIT_FAILURE);

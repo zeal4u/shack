@@ -1,0 +1,12 @@
+<map id="ATM::ProcessBalance" name="ATM::ProcessBalance">
+<area shape="rect" id="node2" href="$classmessaging_1_1Receiver.html#a3f0e7b541159793eaec1e0fa6802d4d2" title="messaging::Receiver\l::Wait" alt="" coords="1358,365,1503,406"/>
+<area shape="rect" id="node3" href="$classmessaging_1_1Dispatcher.html#a6d9d0bf1da266ca951c7821bc4e84f9f" title="messaging::Dispatcher\l::Handle" alt="" coords="1353,213,1509,254"/>
+<area shape="rect" id="node4" href="$classmessaging_1_1Sender.html#a5f8d8f2fa560996d8f224cc0f10d8f8c" title="messaging::Sender::Send" alt="" coords="1345,651,1517,677"/>
+<area shape="rect" id="node6" href="$classATM.html#adb4a5188bec74d4cd199acdd6e62941d" title="ATM::WaitForAction" alt="" coords="208,347,349,373"/>
+<area shape="rect" id="node8" href="$classATM.html#accef2f77884d7272e7fe3cdfc210ba35" title="ATM::DoneProcessing" alt="" coords="616,517,771,544"/>
+<area shape="rect" id="node5" href="$classmessaging_1_1Queue.html#a8ee0ac353ead8aca910d8073a2d5e16e" title="messaging::Queue::Push" alt="" coords="1566,651,1735,677"/>
+<area shape="rect" id="node7" href="$classATM.html#aa8ee553ff388f9977f1a504fed5eb946" title="ATM::ProcessWithdrawal" alt="" coords="397,321,568,348"/>
+<area shape="rect" id="node9" href="$classATM.html#ae530dbaa0e091b13f919542d002ef216" title="ATM::WaitForCard" alt="" coords="819,524,951,551"/>
+<area shape="rect" id="node10" href="$classATM.html#a2a182a5996cbed4122a9c1afd2f1697a" title="ATM::GettingPin" alt="" coords="1001,473,1119,500"/>
+<area shape="rect" id="node11" href="$classATM.html#a1378674f5e175c6f99cccb8b848e3512" title="ATM::VerifyingPin" alt="" coords="1168,397,1296,424"/>
+</map>

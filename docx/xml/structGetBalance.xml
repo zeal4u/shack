@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structGetBalance" kind="struct" prot="public">
+    <compoundname>GetBalance</compoundname>
+    <includes refid="withdraw_8h" local="no">withdraw.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structGetBalance_1a75b798e4035cf6468cc359db6ba0a4e9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string GetBalance::account_</definition>
+        <argsstring></argsstring>
+        <name>account_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="91" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGetBalance_1a469a494592b15655be79bc85c7202750" prot="public" static="no" mutable="yes">
+        <type><ref refid="classmessaging_1_1Sender" kindref="compound">messaging::Sender</ref></type>
+        <definition>messaging::Sender GetBalance::atm_queue_</definition>
+        <argsstring></argsstring>
+        <name>atm_queue_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="92" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structGetBalance_1a3c9b1bdf591755a52784b97de5ffd866" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GetBalance::GetBalance</definition>
+        <argsstring>(const std::string &amp;account, messaging::Sender atm_queue)</argsstring>
+        <name>GetBalance</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>account</declname>
+        </param>
+        <param>
+          <type><ref refid="classmessaging_1_1Sender" kindref="compound">messaging::Sender</ref></type>
+          <declname>atm_queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Public/shack/atm/withdraw.h" line="94" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="94" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="138">
+        <label>messaging::Sender</label>
+        <link refid="classmessaging_1_1Sender"/>
+        <childnode refid="139" relation="usage">
+          <edgelabel>queue_ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="139">
+        <label>messaging::Queue</label>
+        <link refid="classmessaging_1_1Queue"/>
+      </node>
+      <node id="137">
+        <label>GetBalance</label>
+        <link refid="structGetBalance"/>
+        <childnode refid="138" relation="usage">
+          <edgelabel>atm_queue_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/root/Public/shack/atm/withdraw.h" line="90" column="1" bodyfile="/root/Public/shack/atm/withdraw.h" bodystart="90" bodyend="97"/>
+    <listofallmembers>
+      <member refid="structGetBalance_1a75b798e4035cf6468cc359db6ba0a4e9" prot="public" virt="non-virtual"><scope>GetBalance</scope><name>account_</name></member>
+      <member refid="structGetBalance_1a469a494592b15655be79bc85c7202750" prot="public" virt="non-virtual"><scope>GetBalance</scope><name>atm_queue_</name></member>
+      <member refid="structGetBalance_1a3c9b1bdf591755a52784b97de5ffd866" prot="public" virt="non-virtual"><scope>GetBalance</scope><name>GetBalance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

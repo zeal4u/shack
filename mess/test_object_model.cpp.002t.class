@@ -1,0 +1,133 @@
+Vtable for Base
+Base::_ZTV4Base: 4u entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI4Base)
+16    (int (*)(...))Base::~Base
+24    (int (*)(...))Base::~Base
+
+Class Base
+   size=16 align=8
+   base size=12 base align=8
+Base (0x0x7fbef59c14e0) 0
+    vptr=((& Base::_ZTV4Base) + 16u)
+
+Vtable for A
+A::_ZTV1A: 10u entries
+0     16u
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI1A)
+24    (int (*)(...))A::~A
+32    (int (*)(...))A::~A
+40    18446744073709551600u
+48    (int (*)(...))-16
+56    (int (*)(...))(& _ZTI1A)
+64    (int (*)(...))A::_ZTv0_n24_N1AD1Ev
+72    (int (*)(...))A::_ZTv0_n24_N1AD0Ev
+
+VTT for A
+A::_ZTT1A: 2u entries
+0     ((& A::_ZTV1A) + 24u)
+8     ((& A::_ZTV1A) + 64u)
+
+Class A
+   size=32 align=8
+   base size=12 base align=8
+A (0x0x7fbef59b6138) 0
+    vptridx=0u vptr=((& A::_ZTV1A) + 24u)
+  Base (0x0x7fbef59c1540) 16 virtual
+      vptridx=8u vbaseoffset=-24 vptr=((& A::_ZTV1A) + 64u)
+
+Vtable for B
+B::_ZTV1B: 10u entries
+0     16u
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI1B)
+24    (int (*)(...))B::~B
+32    (int (*)(...))B::~B
+40    18446744073709551600u
+48    (int (*)(...))-16
+56    (int (*)(...))(& _ZTI1B)
+64    (int (*)(...))B::_ZTv0_n24_N1BD1Ev
+72    (int (*)(...))B::_ZTv0_n24_N1BD0Ev
+
+VTT for B
+B::_ZTT1B: 2u entries
+0     ((& B::_ZTV1B) + 24u)
+8     ((& B::_ZTV1B) + 64u)
+
+Class B
+   size=32 align=8
+   base size=12 base align=8
+B (0x0x7fbef59b6208) 0
+    vptridx=0u vptr=((& B::_ZTV1B) + 24u)
+  Base (0x0x7fbef59c15a0) 16 virtual
+      vptridx=8u vbaseoffset=-24 vptr=((& B::_ZTV1B) + 64u)
+
+Vtable for Foo
+Foo::_ZTV3Foo: 15u entries
+0     32u
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI3Foo)
+24    (int (*)(...))Foo::~Foo
+32    (int (*)(...))Foo::~Foo
+40    16u
+48    (int (*)(...))-16
+56    (int (*)(...))(& _ZTI3Foo)
+64    (int (*)(...))Foo::_ZThn16_N3FooD1Ev
+72    (int (*)(...))Foo::_ZThn16_N3FooD0Ev
+80    18446744073709551584u
+88    (int (*)(...))-32
+96    (int (*)(...))(& _ZTI3Foo)
+104   (int (*)(...))Foo::_ZTv0_n24_N3FooD1Ev
+112   (int (*)(...))Foo::_ZTv0_n24_N3FooD0Ev
+
+Construction vtable for A (0x0x7fbef59b62d8 instance) in Foo
+Foo::_ZTC3Foo0_1A: 10u entries
+0     32u
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI1A)
+24    (int (*)(...))A::~A
+32    (int (*)(...))A::~A
+40    18446744073709551584u
+48    (int (*)(...))-32
+56    (int (*)(...))(& _ZTI1A)
+64    (int (*)(...))A::_ZTv0_n24_N1AD1Ev
+72    (int (*)(...))A::_ZTv0_n24_N1AD0Ev
+
+Construction vtable for B (0x0x7fbef59b6340 instance) in Foo
+Foo::_ZTC3Foo16_1B: 10u entries
+0     16u
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI1B)
+24    (int (*)(...))B::~B
+32    (int (*)(...))B::~B
+40    18446744073709551600u
+48    (int (*)(...))-16
+56    (int (*)(...))(& _ZTI1B)
+64    (int (*)(...))B::_ZTv0_n24_N1BD1Ev
+72    (int (*)(...))B::_ZTv0_n24_N1BD0Ev
+
+VTT for Foo
+Foo::_ZTT3Foo: 7u entries
+0     ((& Foo::_ZTV3Foo) + 24u)
+8     ((& Foo::_ZTC3Foo0_1A) + 24u)
+16    ((& Foo::_ZTC3Foo0_1A) + 64u)
+24    ((& Foo::_ZTC3Foo16_1B) + 24u)
+32    ((& Foo::_ZTC3Foo16_1B) + 64u)
+40    ((& Foo::_ZTV3Foo) + 104u)
+48    ((& Foo::_ZTV3Foo) + 64u)
+
+Class Foo
+   size=48 align=8
+   base size=32 base align=8
+Foo (0x0x7fbef59cd2a0) 0
+    vptridx=0u vptr=((& Foo::_ZTV3Foo) + 24u)
+  A (0x0x7fbef59b62d8) 0
+      primary-for Foo (0x0x7fbef59cd2a0)
+      subvttidx=8u
+    Base (0x0x7fbef59c1600) 32 virtual
+        vptridx=40u vbaseoffset=-24 vptr=((& Foo::_ZTV3Foo) + 104u)
+  B (0x0x7fbef59b6340) 16
+      subvttidx=24u vptridx=48u vptr=((& Foo::_ZTV3Foo) + 64u)
+    Base (0x0x7fbef59c1600) alternative-path
+

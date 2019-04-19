@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="queue_8h" kind="file">
+    <compoundname>queue.h</compoundname>
+    <includes local="no">mutex</includes>
+    <includes local="no">condition_variable</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="sender_8h" local="yes">/root/Public/shack/atm/sender.h</includedby>
+    <includedby refid="receiver_8h" local="yes">/root/Public/shack/atm/receiver.h</includedby>
+    <includedby refid="dispatcher_8h" local="yes">/root/Public/shack/atm/dispatcher.h</includedby>
+    <includedby refid="template__dispatcher_8h" local="yes">/root/Public/shack/atm/template_dispatcher.h</includedby>
+    <includedby refid="queue_8cpp" local="yes">/root/Public/shack/atm/queue.cpp</includedby>
+    <incdepgraph>
+      <node id="313">
+        <label>queue</label>
+      </node>
+      <node id="310">
+        <label>/root/Public/shack/atm/queue.h</label>
+        <link refid="queue.h"/>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>condition_variable</label>
+      </node>
+      <node id="311">
+        <label>mutex</label>
+      </node>
+      <node id="314">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="321">
+        <label>/root/Public/shack/atm/interface_machine.h</label>
+        <link refid="interface__machine_8h"/>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>/root/Public/shack/atm/queue.h</label>
+        <link refid="queue.h"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>/root/Public/shack/atm/sender.h</label>
+        <link refid="sender_8h"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>/root/Public/shack/atm/template_dispatcher.cpp</label>
+        <link refid="template__dispatcher_8cpp"/>
+      </node>
+      <node id="323">
+        <label>/root/Public/shack/atm/withdraw.h</label>
+        <link refid="withdraw_8h"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>/root/Public/shack/atm/receiver.h</label>
+        <link refid="receiver_8h"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>/root/Public/shack/atm/template_dispatcher.h</label>
+        <link refid="template__dispatcher_8h"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>/root/Public/shack/atm/dispatcher.h</label>
+        <link refid="dispatcher_8h"/>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>/root/Public/shack/atm/dispatcher.cpp</label>
+        <link refid="dispatcher_8cpp"/>
+      </node>
+      <node id="318">
+        <label>/root/Public/shack/atm/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="329">
+        <label>/root/Public/shack/atm/queue.cpp</label>
+        <link refid="queue_8cpp"/>
+      </node>
+      <node id="324">
+        <label>/root/Public/shack/atm/sender.cpp</label>
+        <link refid="sender_8cpp"/>
+      </node>
+      <node id="320">
+        <label>/root/Public/shack/atm/bank_machine.h</label>
+        <link refid="bank__machine_8h"/>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>/root/Public/shack/atm/receiver.cpp</label>
+        <link refid="receiver_8cpp"/>
+      </node>
+      <node id="317">
+        <label>/root/Public/shack/atm/atm.h</label>
+        <link refid="atm_8h"/>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmessaging_1_1MessageBase" prot="public">messaging::MessageBase</innerclass>
+    <innerclass refid="structmessaging_1_1WrappedMessage" prot="public">messaging::WrappedMessage</innerclass>
+    <innerclass refid="classmessaging_1_1Queue" prot="public">messaging::Queue</innerclass>
+    <innernamespace refid="namespacemessaging">messaging</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>zeal4u<sp/>on<sp/>2019/3/28.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author:<sp/>zeal4u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Email:<sp/>jsz1995@live.com</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SHACK_QUEUE_H</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SHACK_QUEUE_H</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;condition_variable&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;queue&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">messaging<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structmessaging_1_1MessageBase" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmessaging_1_1MessageBase" kindref="compound">MessageBase</ref>{</highlight></codeline>
+<codeline lineno="18" refid="structmessaging_1_1MessageBase_1afe3211ee077797d75b5a6c549e2aff5f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structmessaging_1_1MessageBase_1afe3211ee077797d75b5a6c549e2aff5f" kindref="member">~MessageBase</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Msg&gt;</highlight></codeline>
+<codeline lineno="22" refid="structmessaging_1_1WrappedMessage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmessaging_1_1WrappedMessage" kindref="compound">WrappedMessage</ref><sp/>:<sp/><ref refid="structmessaging_1_1MessageBase" kindref="compound">MessageBase</ref><sp/>{</highlight></codeline>
+<codeline lineno="23" refid="structmessaging_1_1WrappedMessage_1a7bd8849ddcc85328985384636caa7199" refkind="member"><highlight class="normal"><sp/><sp/>Msg<sp/><ref refid="structmessaging_1_1WrappedMessage_1a7bd8849ddcc85328985384636caa7199" kindref="member">contents_</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structmessaging_1_1WrappedMessage_1a1c4326bb674fcb8c82e77554618d4c46" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structmessaging_1_1WrappedMessage_1a1c4326bb674fcb8c82e77554618d4c46" kindref="member">WrappedMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Msg&amp;<sp/>contents)<sp/>:<sp/><ref refid="structmessaging_1_1WrappedMessage_1a7bd8849ddcc85328985384636caa7199" kindref="member">contents_</ref>(contents)<sp/>{}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classmessaging_1_1Queue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmessaging_1_1Queue" kindref="compound">Queue</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="30" refid="classmessaging_1_1Queue_1a8ee0ac353ead8aca910d8073a2d5e16e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmessaging_1_1Queue_1a8ee0ac353ead8aca910d8073a2d5e16e" kindref="member">Push</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>lk(<ref refid="classmessaging_1_1Queue_1acb84af14fea49c09597be7ad19f9f3c5" kindref="member">mutex_</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551" kindref="member">queue_</ref>.push(std::make_shared&lt;<ref refid="structmessaging_1_1WrappedMessage" kindref="compound">WrappedMessage&lt;T&gt;</ref>&gt;(msg));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1Queue_1aec7510ebff3d15176afdf3d93ca6fdc8" kindref="member">cond_var_</ref>.notify_all();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classmessaging_1_1Queue_1a624adbac8b7f4b5ebf6bb0f9ab76bcc3" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;MessageBase&gt;<sp/><ref refid="classmessaging_1_1Queue_1a624adbac8b7f4b5ebf6bb0f9ab76bcc3" kindref="member">WaitAndPop</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_lock&lt;std::mutex&gt;<sp/>lk(<ref refid="classmessaging_1_1Queue_1acb84af14fea49c09597be7ad19f9f3c5" kindref="member">mutex_</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1Queue_1aec7510ebff3d15176afdf3d93ca6fdc8" kindref="member">cond_var_</ref>.wait(lk,<sp/>[&amp;]{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551" kindref="member">queue_</ref>.empty();});</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>res<sp/>=<sp/><ref refid="classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551" kindref="member">queue_</ref>.front();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551" kindref="member">queue_</ref>.pop();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45" refid="classmessaging_1_1Queue_1acb84af14fea49c09597be7ad19f9f3c5" refkind="member"><highlight class="normal"><sp/><sp/>std::mutex<sp/><ref refid="classmessaging_1_1Queue_1acb84af14fea49c09597be7ad19f9f3c5" kindref="member">mutex_</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classmessaging_1_1Queue_1aec7510ebff3d15176afdf3d93ca6fdc8" refkind="member"><highlight class="normal"><sp/><sp/>std::condition_variable<sp/><ref refid="classmessaging_1_1Queue_1aec7510ebff3d15176afdf3d93ca6fdc8" kindref="member">cond_var_</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551" refkind="member"><highlight class="normal"><sp/><sp/>std::queue&lt;std::shared_ptr&lt;MessageBase&gt;&gt;<sp/><ref refid="classmessaging_1_1Queue_1aae9c5f0bc7b5be870129c56643404551" kindref="member">queue_</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/></highlight><highlight class="comment">//namespace<sp/>messaging</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SHACK_QUEUE_H</highlight></codeline>
+    </programlisting>
+    <location file="/root/Public/shack/atm/queue.h"/>
+  </compounddef>
+</doxygen>
