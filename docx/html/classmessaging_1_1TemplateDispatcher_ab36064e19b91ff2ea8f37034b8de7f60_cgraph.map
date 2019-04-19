@@ -1,4 +1,0 @@
-<map id="messaging::TemplateDispatcher::WaitAndDispatch" name="messaging::TemplateDispatcher::WaitAndDispatch">
-<area shape="rect" id="node2" href="$classmessaging_1_1Queue.html#a624adbac8b7f4b5ebf6bb0f9ab76bcc3" title="messaging::Queue::WaitAndPop" alt="" coords="265,5,477,32"/>
-<area shape="rect" id="node3" href="$classmessaging_1_1TemplateDispatcher.html#a0e8673cb9d39a44f0a8332885efbde8d" title="messaging::TemplateDispatcher\l::Dispatch" alt="" coords="265,57,476,98"/>
-</map>

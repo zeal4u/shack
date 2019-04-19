@@ -1,5 +1,0 @@
-<map id="ATM::Done" name="ATM::Done">
-<area shape="rect" id="node2" href="$classATM.html#a2aa23e220496bdd41d651151a1cc97e6" title="ATM::GetSender" alt="" coords="171,5,291,32"/>
-<area shape="rect" id="node3" href="$classmessaging_1_1Sender.html#a5f8d8f2fa560996d8f224cc0f10d8f8c" title="messaging::Sender::Send" alt="" coords="145,56,317,83"/>
-<area shape="rect" id="node4" href="$classmessaging_1_1Queue.html#a8ee0ac353ead8aca910d8073a2d5e16e" title="messaging::Queue::Push" alt="" coords="366,56,535,83"/>
-</map>
